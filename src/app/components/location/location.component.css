@@ -1,0 +1,89 @@
+div#footer {
+  background: #353535;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  color: #c3c3c3;
+}
+
+.mititulo {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: white;
+}
+
+a.misenlaces {
+  color: white;
+}
+
+div#misenlaces a {
+  color: whitesmoke;
+}
+a {
+  color: whitesmoke;
+}
+.navbar{
+  display: flex;
+  justify-content:center;
+
+}
+.navbar-collapse {
+  flex-basis: 0;
+  flex-grow: 0;
+
+}
+
+@media (width <= 980px){
+  .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+
+  }
+}
+.navbar-light .navbar-nav .active>.nav-link{
+  color: #c3c3c3;
+  font-size: 23px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #c3c3c3;
+  font-size: 23px;
+}
+
+
+/* mascss */
+
+h1 {
+  text-align: center;
+  /* margin: 20px 20px 10px; */
+  font-family: ui-monospace;
+  font-size: 50px;
+  /* margin-bottom: -16px; */
+  letter-spacing: 5px;
+  padding-top: 66px;
+  color: rgb(226, 223, 223);
+}
+
+
+
+div#descripcion {
+  font-size: 20px;
+  text-align: start;
+}
+
+p.descripcion {
+  font-size: 20px;
+  font-family: serif;
+  text-align: justify;
+  color: rgb(199, 199, 199);
+  padding-top: 5%;
+  /* margin-top: 20px; */
+}
+
+p.site-description.slogan.site-tagline {
+  color: rgb(207, 207, 207);
+  text-align: center;
+  /* margin: 10px;
+  margin-bottom: 10px; */
+  letter-spacing: 5px;
+}
