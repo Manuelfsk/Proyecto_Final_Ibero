@@ -10,6 +10,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { LocationComponent } from './components/location/location.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { PhotographyComponent } from './components/photography/photography.component';
+import { ScapesComponent } from './components/scapes/scapes.component';
+
+
+
+
+
+
+
 
 
 const routes: Routes = [
@@ -20,6 +29,8 @@ const routes: Routes = [
 {path:'login', title:'Login', component:LoginComponent},
 {path:'location', title:'Location', component:LocationComponent},
 {path:'shop', title:'Shop', component:ShopComponent},
+{path:'photography', title:'Photography', component:PhotographyComponent},
+{path:'scapes', title:'Scapes', component:ScapesComponent},
 
 ];
 

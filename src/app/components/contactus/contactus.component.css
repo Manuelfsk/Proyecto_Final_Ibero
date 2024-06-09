@@ -1,6 +1,6 @@
 div#miregistro {
   background: #353535;
-  width: 375px;
+  width: 400px;
   margin-left: calc(50% - 180px);
   padding: 15px;
   border-radius: 15px;
@@ -14,6 +14,10 @@ div#misenlaces a {
 }
 a {
   color: whitesmoke;
+}
+
+button.btn.btn-light {
+  margin-top: 15px;
 }
 
 .navbar{
@@ -47,14 +51,6 @@ label {
       flex-grow: 1;
 
   }
-}
-.imagenfondo {
-  background-image: url(../../../assets/img-navbar/bannerfijo.png);
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 
 /* mascss */
@@ -92,4 +88,13 @@ p.site-description.slogan.site-tagline {
   /* margin: 10px;
   margin-bottom: 10px; */
   letter-spacing: 5px;
+}
+
+.imagenfondo {
+  background-image: url(../../../assets/img-navbar/bannerfijo.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }

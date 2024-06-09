@@ -15,6 +15,8 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { LoginComponent } from './components/login/login.component';
 import { LocationComponent } from './components/location/location.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { PhotographyComponent } from './components/photography/photography.component';
+import { ScapesComponent } from './components/scapes/scapes.component';
 
 
 @NgModule({
@@ -30,6 +32,8 @@ import { ShopComponent } from './components/shop/shop.component';
     LoginComponent,
     LocationComponent,
     ShopComponent,
+    PhotographyComponent,
+    ScapesComponent,
 
   ],
   imports: [

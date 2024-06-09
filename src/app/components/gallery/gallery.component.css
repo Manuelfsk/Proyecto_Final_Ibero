@@ -74,14 +74,6 @@ p.site-description.slogan.site-tagline {
   flex-wrap: wrap;
 }
 
-.imagenfondo {
-  background-image: url(../../../assets/img-navbar/bannerfijo.png);
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
 
 #aboutUsContainer {
   max-height: none;
@@ -213,3 +205,13 @@ p.site-description.slogan.site-tagline {
 
   }
 }
+
+.imagenfondo {
+  background-image: url(../../../assets/img-navbar/bannerfijo.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
