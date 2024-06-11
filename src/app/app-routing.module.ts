@@ -13,13 +13,13 @@ import { ShopComponent } from './components/shop/shop.component';
 
 
 const routes: Routes = [
-{path:'/home', title:'Home', component:NavbarComponent},
-{path:'/gallery', title:'Gallery', component:GalleryComponent},
-{path:'/collages', title:'Collages', component:CollagesComponent},
-{path:'/contactus', title:'Contac Us', component:ContactusComponent},
-{path:'/login', title:'Login', component:LoginComponent},
-{path:'/location', title:'Location', component:LocationComponent},
-{path:'/shop', title:'Shop', component:ShopComponent},
+{path:'/home', title:'Home', component:NavbarComponent, pathMatch:"full"},
+{path:'/gallery', title:'Gallery', component:GalleryComponent, pathMatch:"full"},
+{path:'/collages', title:'Collages', component:CollagesComponent, pathMatch:"full"},
+{path:'/contactus', title:'Contac Us', component:ContactusComponent, pathMatch:"full"},
+{path:'/login', title:'Login', component:LoginComponent, pathMatch:"full"},
+{path:'/location', title:'Location', component:LocationComponent, pathMatch:"full"},
+{path:'/shop', title:'Shop', component:ShopComponent, pathMatch:"full"},
 
 ];
 
