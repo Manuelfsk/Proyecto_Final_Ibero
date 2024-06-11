@@ -13,13 +13,29 @@ import { ShopComponent } from './components/shop/shop.component';
 
 
 const routes: Routes = [
-{path:'/home', title:'Home', component:NavbarComponent, pathMatch:"full"},
-{path:'/gallery', title:'Gallery', component:GalleryComponent, pathMatch:"full"},
-{path:'/collages', title:'Collages', component:CollagesComponent, pathMatch:"full"},
-{path:'/contactus', title:'Contac Us', component:ContactusComponent, pathMatch:"full"},
-{path:'/login', title:'Login', component:LoginComponent, pathMatch:"full"},
-{path:'/location', title:'Location', component:LocationComponent, pathMatch:"full"},
-{path:'/shop', title:'Shop', component:ShopComponent, pathMatch:"full"},
+
+  //A. rutas header y footer
+  { path: '/footer', component: FooterComponent, pathMatch: "full" },
+  { path: '/navbar', component: NavbarComponent, pathMatch: "full" },
+
+  //1. ruta home
+  { path: '/home', title: 'Home', component: NavbarComponent, pathMatch: "full" },
+  //2.ruta gallery
+  { path: '/gallery', title: 'Gallery', component: GalleryComponent, pathMatch: "full" },
+  //3.ruta shop
+  { path: '/shop', title: 'Shop', component: ShopComponent, pathMatch: "full" },
+  //4. ruta contact us
+  { path: '/contactus', title: 'Contac Us', component: ContactusComponent, pathMatch: "full" },
+  //5. ruta login
+  { path: '/login', title: 'Login', component: LoginComponent, pathMatch: "full" },
+  //6. ruta location
+  { path: '/location', title: 'Location', component: LocationComponent, pathMatch: "full" },
+
+  { path: '/collages', title: 'Collages', component: CollagesComponent, pathMatch: "full" },
+
+
+
+
 
 ];
 
