@@ -1,38 +1,35 @@
 
-div#descripcion {
+/* div#descripcion {
   font-size: 20px;
   text-align: start;
-}
+} */
 
-p.descripcion {
+/* p.descripcion {
   font-size: 20px;
   font-family: serif;
   text-align: justify;
   color: rgb(199, 199, 199);
   padding-top: 5%;
-  /* margin-top: 20px; */
-}
+} */
 
-p.site-description.slogan.site-tagline {
+/* p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
-  /* margin: 10px;
-  margin-bottom: 10px; */
   letter-spacing: 5px;
-}
+} */
 
-#Sobre_nosotros{
+/* #Sobre_nosotros{
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-}
+} */
 
-.imagenfondo{
+/* .imagenfondo{
   background-image: url(../../../assets/bodyhome/bannerfijo.png);
   height: auto;
   width: auto;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-}
+} */

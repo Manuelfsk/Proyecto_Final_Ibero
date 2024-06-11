@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+#footer {
+    background: #353535;
+    padding: 10%;
+    color: #c3c3c3;
+}
+
+.ajustenav {
+  margin-top: -5px;
+}

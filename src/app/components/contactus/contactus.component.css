@@ -1,4 +1,4 @@
-div#miregistro {
+/* div#miregistro {
   background: #353535;
   width: 375px;
   margin-left: calc(50% - 180px);
@@ -57,14 +57,12 @@ label {
   background-size: cover;
 }
 
-/* mascss */
+
 
 h1 {
   text-align: center;
-  /* margin: 20px 20px 10px; */
   font-family: ui-monospace;
   font-size: 50px;
-  /* margin-bottom: -16px; */
   letter-spacing: 5px;
   padding-top: 66px;
   color: rgb(226, 223, 223);
@@ -83,13 +81,11 @@ p.descripcion {
   text-align: justify;
   color: rgb(199, 199, 199);
   padding-top: 5%;
-  /* margin-top: 20px; */
+
 }
 
 p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
-  /* margin: 10px;
-  margin-bottom: 10px; */
   letter-spacing: 5px;
-}
+} */

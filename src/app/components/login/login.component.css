@@ -1,4 +1,4 @@
-div#milogin {
+/* div#milogin {
   background: #353535;
   width: 363px;
   margin-left: calc(50% - 180px);
@@ -13,14 +13,17 @@ div#milogin {
 div#misenlaces a {
   color: whitesmoke;
 }
+
 a {
   color: whitesmoke;
 }
-.navbar{
+
+.navbar {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 
 }
+
 .navbar-collapse {
   flex-basis: 0;
   flex-grow: 0;
@@ -28,10 +31,11 @@ a {
 }
 
 
-.navbar-light .navbar-nav .active>.nav-link{
+.navbar-light .navbar-nav .active>.nav-link {
   color: #c3c3c3;
   font-size: 23px;
 }
+
 .navbar-light .navbar-nav .nav-link {
   color: #c3c3c3;
   font-size: 23px;
@@ -41,25 +45,27 @@ label {
   font-style: italic;
 }
 
-@media (width <= 980px){
+@media (width <=980px) {
   .navbar-collapse {
-      flex-basis: 100%;
-      flex-grow: 1;
+    flex-basis: 100%;
+    flex-grow: 1;
 
   }
 
 }
 
-@media (width <= 395px) {
+@media (width <=395px) {
   div#milogin {
-      width: auto;
+    width: auto;
   }
 }
+
 button.btn.btn-light {
-margin-top: 15px;}
+  margin-top: 15px;
+}
 
 input#comprador {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 form {
@@ -67,14 +73,12 @@ form {
 }
 
 
-/* mascss */
 
 h1 {
   text-align: center;
-  /* margin: 20px 20px 10px; */
+
   font-family: ui-monospace;
   font-size: 50px;
-  /* margin-bottom: -16px; */
   letter-spacing: 5px;
   padding-top: 66px;
   color: rgb(226, 223, 223);
@@ -93,13 +97,10 @@ p.descripcion {
   text-align: justify;
   color: rgb(199, 199, 199);
   padding-top: 5%;
-  /* margin-top: 20px; */
 }
 
 p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
-  /* margin: 10px;
-  margin-bottom: 10px; */
   letter-spacing: 5px;
-}
+} */

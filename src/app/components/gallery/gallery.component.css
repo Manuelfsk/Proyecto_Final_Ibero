@@ -1,4 +1,4 @@
-#testing {
+/* #testing {
   margin-right: 0%;
   padding-right: 0%;
   padding: 0%;
@@ -6,8 +6,6 @@
 
 div#footer {
   background: #353535;
-  /* margin-top: 20px; */
-  /* padding-top: 30px; */
   padding: 10%;
   color: #c3c3c3;
 }
@@ -34,10 +32,10 @@ a {
 
 h1 {
   text-align: center;
-  /* margin: 20px 20px 10px; */
+
   font-family: ui-monospace;
   font-size: 50px;
-  /* margin-bottom: -16px; */
+
   letter-spacing: 5px;
   padding-top: 66px;
   color: rgb(226, 223, 223);
@@ -56,14 +54,12 @@ p.descripcion {
   text-align: justify;
   color: rgb(199, 199, 199);
   padding-top: 5%;
-  /* margin-top: 20px; */
+
 }
 
 p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
-  /* margin: 10px;
-  margin-bottom: 10px; */
   letter-spacing: 5px;
 }
 
@@ -139,7 +135,6 @@ p.site-description.slogan.site-tagline {
   }
 }
 
-/* mascss */
 
 .navbar{
   display: flex;
@@ -182,16 +177,11 @@ p.site-description.slogan.site-tagline {
 
 .figure{
   justify-content: space-between;
-  /* background-color: blue; */
   align-items: flex-start;
   width:350px;
   height:350px;
-  /* transition: 1s all ease; */
 }
-/* .figure:hover{
-  width: 370px;
-  height: 370px;
-} */
+
 .contenedordecollage1 {
   display: flex;
   flex-wrap: wrap;
@@ -210,6 +200,5 @@ p.site-description.slogan.site-tagline {
       flex-basis: 100%;
       flex-grow: 1;
       position: relative;
-
   }
-}
+} */
