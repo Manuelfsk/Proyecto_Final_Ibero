@@ -22,15 +22,15 @@ import { ScapesComponent } from './components/scapes/scapes.component';
 
 
 const routes: Routes = [
-{path:'home', title:'Home', component:NavbarComponent},
-{path:'gallery', title:'Gallery', component:GalleryComponent},
-{path:'collages', title:'Collages', component:CollagesComponent},
-{path:'contactus', title:'Contac Us', component:ContactusComponent},
-{path:'login', title:'Login', component:LoginComponent},
-{path:'location', title:'Location', component:LocationComponent},
-{path:'shop', title:'Shop', component:ShopComponent},
-{path:'photography', title:'Photography', component:PhotographyComponent},
-{path:'scapes', title:'Scapes', component:ScapesComponent},
+{path:'home', title:'Home', component:NavbarComponent,pathMatch:"full"},
+{path:'gallery', title:'Gallery', component:GalleryComponent,pathMatch:"full"},
+{path:'collages', title:'Collages', component:CollagesComponent,pathMatch:"full"},
+{path:'contactus', title:'Contac Us', component:ContactusComponent,pathMatch:"full"},
+{path:'login', title:'Login', component:LoginComponent,pathMatch:"full"},
+{path:'location', title:'Location', component:LocationComponent,pathMatch:"full"},
+{path:'shop', title:'Shop', component:ShopComponent,pathMatch:"full"},
+{path:'photography', title:'Photography', component:PhotographyComponent,pathMatch:"full"},
+{path:'scapes', title:'Scapes', component:ScapesComponent,pathMatch:"full"},
 
 ];
 

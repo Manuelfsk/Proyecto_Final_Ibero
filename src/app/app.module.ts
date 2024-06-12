@@ -1,5 +1,6 @@
 //por qué me sale este archivo?
 
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,6 +18,7 @@ import { LocationComponent } from './components/location/location.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { PhotographyComponent } from './components/photography/photography.component';
 import { ScapesComponent } from './components/scapes/scapes.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { ScapesComponent } from './components/scapes/scapes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

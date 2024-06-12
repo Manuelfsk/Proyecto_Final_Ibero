@@ -74,14 +74,6 @@ p.site-description.slogan.site-tagline {
   flex-wrap: wrap;
 }
 
-.imagenfondo {
-  background-image: url(../../../assets/img-navbar/bannerfijo.png);
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
 
 #aboutUsContainer {
   max-height: none;
@@ -138,3 +130,88 @@ p.site-description.slogan.site-tagline {
     position: relative;
   }
 }
+
+/* mascss */
+
+.navbar{
+  display: flex;
+  justify-content:center;
+  top: 5px;
+
+
+
+}
+.navbar-collapse {
+  flex-basis: 0;
+  flex-grow: 0;
+
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link{
+  color: #c3c3c3;
+  font-size: 23px;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #c3c3c3;
+  font-size: 23px;
+
+}
+.colorfuente{
+  color: rgb(0, 0, 0) !important;
+}
+.colorfuente.active{
+  color:rgb(104, 70, 70) !important;
+}
+.container-fluid {
+  justify-content:center;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+}
+
+.figure{
+  justify-content: space-between;
+  /* background-color: blue; */
+  align-items: flex-start;
+  width:350px;
+  height:350px;
+  /* transition: 1s all ease; */
+}
+/* .figure:hover{
+  width: 370px;
+  height: 370px;
+} */
+.contenedorphoto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding-bottom: 5%;
+}
+
+.figure-caption{
+  font-size: 20px;
+}
+
+@media (width <= 980px){
+  .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      position: relative;
+
+  }
+}
+
+.imagenfondo {
+  background-image: url(../../../assets/img-navbar/bannerfijo.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
