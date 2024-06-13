@@ -7,6 +7,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { LocationComponent } from './components/location/location.component';
 import { LoginComponent } from './components/login/login.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,8 @@ const routes: Routes = [
   { path: "login", component: LoginComponent, pathMatch: "full" },
   //6. ruta location
   { path: "location", component: LocationComponent, pathMatch: "full" },
+  // 7. ruta dashboard
+  { path: "dashboard", component: DashboardComponent, pathMatch: "full" },
 
   ];
 
