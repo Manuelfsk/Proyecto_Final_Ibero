@@ -1,10 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: rgb(32, 83, 158);
+  background: linear-gradient(180deg, rgba(32, 83, 158, 0.4) 0%, rgba(164, 152, 186, 0.3) 49%, rgba(227, 232, 227, 0.2) 100%);
+
+}
+
 #footer {
-    background: #353535;
-    padding: 10%;
-    color: #c3c3c3;
+  background: #353535;
+  padding: 10%;
+  color: #c3c3c3;
 }
 
 .ajustenav {
   margin-top: -5px;
+}
+
+.ventana {
+  background-color: #9c8477;
+  height: 30px;
+  position: absolute;
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  color: white;
+  /* overflow: auto; */
+}
+.productos {
+  padding-left: 10px;
 }
