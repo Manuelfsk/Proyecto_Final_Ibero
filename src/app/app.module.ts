@@ -15,6 +15,8 @@ import { LoginComponent } from './components/login/login.component';
 import { LocationComponent } from './components/location/location.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { FormsModule } from '@angular/forms';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 @NgModule({
@@ -30,6 +32,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     LocationComponent,
     ShopComponent,
+    DashboardComponent,
+    MenuComponent,
 
   ],
   imports: [
