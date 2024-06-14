@@ -1,0 +1,61 @@
+.menuDash {
+    background: rgb(3, 14, 0);
+    background: linear-gradient(180deg, rgba(3, 14, 0, 1) 0%, rgba(38, 59, 51, 1) 49%, rgba(156, 132, 119, 1) 100%);
+    width: 200px;
+    height: calc(100vh - 39px);
+    font-style: oblique;
+    font-weight: 500;
+    border-radius: 0px 0px 20px;
+    border: solid 1px;
+    overflow: auto;
+    float: left;
+}
+#superior{
+    background: rgb(3, 14, 0);
+    height: 39px;
+    border: solid 1px;
+}
+
+.imgdash {
+    border-radius: 50%;
+    width: 90%;
+    padding-left: 10%;
+    /* margin-bottom: 5px; */
+    padding-bottom: 10px;
+}
+
+.nombre {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.rol {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: white;
+}
+
+.itemmenu {
+    height: 46px;
+    padding-left: 5px;
+    margin-top: 14px;
+    padding-top: 1px;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+img.imgperf {
+    vertical-align: middle;
+    width: 45px;
+    margin-right: 6px;
+}
+
+.itemmenu:hover {
+    margin-left: 10px;
+}
