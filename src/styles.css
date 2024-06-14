@@ -27,3 +27,15 @@ body {
 .productos {
   padding-left: 10px;
 }
+.imgprod {
+  width: 50px;
+  margin-top: 8px;
+  margin-left: calc(100% - 50px);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.imgvent {
+  width: 40px;
+  cursor: pointer;
+}
