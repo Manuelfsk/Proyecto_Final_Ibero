@@ -1,4 +1,42 @@
 <app-navbar></app-navbar>
-<p>shop works!</p>
-<app-footer></app-footer>
 
+<h2>bienvenidos</h2>
+<div class="container">
+    <div class="row">
+        <div class="row col-6 col-sm-6 col-md-4 col-lg-3" *ngFor=" let item of datos">
+            <div class="card" style="width: 18rem;">
+                <img src="{{item.imagen}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.nombre}}</h5>
+                    <p class="card-text">{{item.precio | currency}}</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3" *ngFor=" let item of datos">
+            <div class="itemproducto">
+                <div class="miproducto">
+                    <img class="imgproduc" src="{{item.imagen}}" >
+                </div>
+                <div class="clsnombreproducto">{{item.nombre}}</div>
+                <div class="clsprecio">{{item.precio}}</div>
+                <div class="btn btn-primary">Comprar</div>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<app-footer></app-footer>

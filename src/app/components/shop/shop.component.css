@@ -1,0 +1,29 @@
+.itemproducto{
+    padding: 15px;
+    border:solid 1px #000000;
+    margin-bottom: 14px;
+    border-radius: 9px;
+}
+
+img.miproducto{
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+}
+.imgproduc{
+    width: 59px;
+}
+.clsnombreprducto{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: -2px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.clsprecio{
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    margin-bottom: 13px;
+}
