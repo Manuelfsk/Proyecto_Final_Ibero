@@ -16,26 +16,25 @@ import { ScapesComponent } from './components/scapes/scapes.component';
 
 
 
-
-
-
-
-
+// RUTAS DE NAVEGACION
 const routes: Routes = [
+{path:'', title:'', component:NavbarComponent,pathMatch:"full"},
 {path:'home', title:'Home', component:NavbarComponent,pathMatch:"full"},
 {path:'gallery', title:'Gallery', component:GalleryComponent,pathMatch:"full"},
 {path:'collages', title:'Collages', component:CollagesComponent,pathMatch:"full"},
-{path:'contactus', title:'Contac Us', component:ContactusComponent,pathMatch:"full"},
+{path:'contactus', title:'ContacUs', component:ContactusComponent,pathMatch:"full"},
 {path:'login', title:'Login', component:LoginComponent,pathMatch:"full"},
 {path:'location', title:'Location', component:LocationComponent,pathMatch:"full"},
 {path:'shop', title:'Shop', component:ShopComponent,pathMatch:"full"},
 {path:'photography', title:'Photography', component:PhotographyComponent,pathMatch:"full"},
 {path:'scapes', title:'Scapes', component:ScapesComponent,pathMatch:"full"},
-
 ];
 
 @NgModule({
+
+
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+
 })
 export class AppRoutingModule { }
