@@ -2,6 +2,7 @@
 div#descripcion {
   font-size: 20px;
   text-align: start;
+
 }
 
 p.descripcion {
@@ -11,6 +12,7 @@ p.descripcion {
   color: rgb(199, 199, 199);
   padding-top: 5%;
   /* margin-top: 20px; */
+
 }
 
 p.site-description.slogan.site-tagline {
@@ -57,10 +59,19 @@ h1 {
   flex-direction: column;
   justify-content: center;
   padding:10%;
+
+
 }
+/* div#aboutUsContainer {
+  background: #00000030;
+  border-radius: 40px 0px 40px 0px;
+} */
+
+
 
 .col-9{
   flex: 0%;
+
 }
 
 .aboutUs{
@@ -69,6 +80,7 @@ h1 {
   width: auto;
   margin: 0%;
   padding: 0;
+
 }
 
 .navbar{
@@ -120,3 +132,5 @@ div#primerasimagenes {
 .primerasimagenes {
   object-fit: contain;
 }
+
+
