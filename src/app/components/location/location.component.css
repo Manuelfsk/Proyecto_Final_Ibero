@@ -79,4 +79,13 @@ p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
   letter-spacing: 5px;
-} */
+}
+
+.imagenfondo {
+  background-image: url(../../../assets/img-navbar/bannerfijo.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}

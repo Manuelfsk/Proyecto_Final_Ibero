@@ -1,42 +1,219 @@
-<app-navbar></app-navbar>
 
-<h2>bienvenidos</h2>
-<div class="container">
-    <div class="row">
-        <div class="row col-6 col-sm-6 col-md-4 col-lg-3" *ngFor=" let item of datos">
-            <div class="card" style="width: 18rem;">
-                <img src="{{item.imagen}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{item.nombre}}</h5>
-                    <p class="card-text">{{item.precio | currency}}</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
+<header class="imagenfondo">
+  <h1>Altschmerz Ilustration</h1>
+  <p class="site-description slogan site-tagline">
+    Ilustration - Collage - Dark art - Conceptual worlds
+  </p>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" routerLink="/"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/shop">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactus">ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/location">Location</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+</header>
+
+
+<header >
+  <h1 id="shopbycategory">Shop by Category</h1>
+</header>
+
+<!-- <section class="category-list"> -->
+
+<div class="botonesmenu">
+    <button class="botoncitos"><a href="#">Album Cover Art </a></button>
+    <button class="botoncitos"><a href="#">Collages</a></button>
+    <button class="botoncitos"><a href="#">Photography</a></button>
+    <button class="botoncitos"><a href="#">Scapes</a></button>
+
+  </div>
+
+<!-- </section> -->
+
+
+<!-- CARD -->
+<!-- <div class="tarjeticas">
+<div class="card" style="width: 18rem;">
+  <img src="../../../assets/shop/1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3" *ngFor=" let item of datos">
-            <div class="itemproducto">
-                <div class="miproducto">
-                    <img class="imgproduc" src="{{item.imagen}}" >
-                </div>
-                <div class="clsnombreproducto">{{item.nombre}}</div>
-                <div class="clsprecio">{{item.precio}}</div>
-                <div class="btn btn-primary">Comprar</div>
-
-            </div>
-        </div>
-    </div>
 </div> -->
 
-<app-footer></app-footer>
+<!-- <div class="container" style="width: 18rem;">
+  <div class="image">
+    <img src="../../../assets/shop/1.jpg"  class="card-img-top" alt="Scape & Sorrow">
+    <div>
+
+    <div class="text">
+      <h5 class="card-title">Scape & Sorrow</h5>
+    </div>
+
+      <p class="textotarjeta"> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div> -->
+
+
+
+    <!-- <div class="col-6 col-lg-3 col-md-4 rounded my-2">
+      <div class="card border-0 bx-shw my-2 overflow-hidden">
+        <img class="zoomin" src="../../../assets/shop/10.jpg" alt="...">
+      <div class="card-body roboto-condensed-valemia font-weight-bold px-2">
+        <span class="roboto-condensed-valemia-t border border-danger bg-danger text-white rounded-pill p-1">New!</span>
+        Whisky Jhonie Walker Blue Label 750ml
+        <div class="col-12 text-muted font-weight-normal mx-auto">$180.000</div>
+      </div>
+      <div class="btn btn-outline-warning mx-auto mb-3 col-8 roboto-condensed-valemia-t">comprar</div>
+      </div>
+    </div> -->
+
+
+
+    <div class="card-container">
+
+    <div class=" card float-left overflow-hidden ">
+    <img src="../../../assets/shop/1.jpg">
+    <div class="card-content col-12 ">
+      <h3>card 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="" class="btn">Buy</a>
+     </div>
+    </div>
+
+    <!-- ESTE PEDACITO DE CODIGO ME GUSTO MUCHO -->
+    <!-- <div class="card float-left overflow-hidden">
+    <div class="pruebaimagen"><img src="../../../assets/shop/estasi.jpg">
+    </div>
+      <div class="card-content col-12">
+        <h3>card 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="" class="btn">Buy</a>
+       </div>
+      </div> -->
+
+      <div class="card float-left overflow-hidden">
+        <img src="../../../assets/shop/estasi.jpg">
+          <div class="card-content col-12">
+            <h3>card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class="btn">Buy</a>
+           </div>
+          </div>
+
+      <div class="card float-left overflow-hidden">
+        <img src="../../../assets/shop/11.jpg">
+        <div class="card-content col-12">
+          <h3>card 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="" class="btn">Buy</a>
+         </div>
+        </div>
+
+        <div class="card float-left overflow-hidden">
+          <img src="../../../assets/shop/13.jpg">
+          <div class="card-content col-12">
+            <h3>card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class="btn">Buy</a>
+           </div>
+          </div>
+
+          <div class="card float-left overflow-hidden">
+            <img src="../../../assets/shop/14.jpg">
+            <div class="card-content col-12">
+              <h3>card 1</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="" class="btn">Buy</a>
+             </div>
+            </div>
+
+            <div class="card float-left overflow-hidden">
+              <img src="../../../assets/shop/9.jpg">
+              <div class="card-content col-12">
+                <h3>card 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="" class="btn">Buy</a>
+               </div>
+              </div>
+
+              <div class="card float-left overflow-hidden">
+                <img src="../../../assets/shop/17.jpg">
+                <div class="card-content col-12">
+                  <h3>card 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="" class="btn">Buy</a>
+                 </div>
+                </div>
+
+                <div class="card float-left overflow-hidden">
+                  <img src="../../../assets/shop/15.jpg">
+                  <div class="card-content col-12">
+                    <h3>card 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="" class="btn">Buy</a>
+                   </div>
+                  </div>
+
+                  <div class="card float-left overflow-hidden">
+                    <img src="../../../assets/shop/3.jpg">
+                    <div class="card-content col-12">
+                      <h3>card 1</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="" class="btn">Buy</a>
+                     </div>
+                    </div>
+
+                    <div class="card float-left overflow-hidden">
+                      <img src="../../../assets/shop/2.png">
+                      <div class="card-content col-12">
+                        <h3>card 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="" class="btn">Buy</a>
+                       </div>
+                      </div>
+
+                      <div class="card float-left overflow-hidden">
+                        <img src="../../../assets/shop/16.jpg">
+                        <div class="card-content col-12">
+                          <h3>card 1</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="" class="btn">Buy</a>
+                         </div>
+                        </div>
+
+                        <div class="card float-left overflow-hidden">
+                          <img src="../../../assets/shop/12.jpg">
+                          <div class="card-content col-12">
+                            <h3>card 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="" class="btn">Buy</a>
+                           </div>
+                          </div>
+  </div>
+

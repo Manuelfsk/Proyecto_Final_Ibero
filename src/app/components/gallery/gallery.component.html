@@ -1,18 +1,58 @@
-<app-navbar></app-navbar>
-<p>gallery works!</p>
+
+
+<body>
+  <header class="imagenfondo">
+    <h1>Altschmerz Ilustration</h1>
+    <p class="site-description slogan site-tagline">
+      Ilustration - Collage - Dark art - Conceptual worlds
+    </p>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" routerLink="/"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contactus">ContactUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/location">Location</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
 
   <ul class="nav nav-tabs">
 
     <li class="nav-item">
-      <a class="colorfuente nav-link active" href="#">Album cover Art</a>
+      <a class="colorfuente nav-link active" routerLink="/gallery">Album cover Art</a>
     </li>
     <li class="nav-item">
-      <a class="colorfuente nav-link" href="./collages.html">Collages</a>
+      <a class="colorfuente nav-link" routerLink="/collages">Collages</a>
     </li>
     <li class="nav-item">
-      <a class="colorfuente nav-link" href="#">Photography</a>
+      <a class="colorfuente nav-link" routerLink="/photography">Photography</a>
     <li class="nav-item">
-      <a class="colorfuente nav-link" href="#">Scapes</a>
+      <a class="colorfuente nav-link" routerLink="/scapes">Scapes</a>
     </li>
 
 
@@ -49,5 +89,5 @@
       <figcaption class="figure-caption text-center">Edictvm - Available</figcaption>
     </figure> <br>
 
-  </div> 
+  </div>
 <app-footer></app-footer>

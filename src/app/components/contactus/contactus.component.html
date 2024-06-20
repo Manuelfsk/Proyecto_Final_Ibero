@@ -1,26 +1,64 @@
-<app-navbar></app-navbar>
-<h2 class="titu">Contactanos</h2>
-<p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi voluptatibus non explicabo porro minus
-  impedit saepe quo sed id, illum aspernatur earum iste, distinctio eveniet. Minus in delectus veritatis?</p>
 
-  <div class="container col col-sm-6 col-md-6 col-lg-6  border border-dark rounded mb-5 formulario">
-  <div class="form-group">
-    <label for="nombres">Nombres</label>
-    <input type="email" class="form-control" id="nombres" placeholder="Nombres">
+<body>
+  <header class="imagenfondo">
+    <h1>Altschmerz Ilustration</h1>
+    <p class="site-description slogan site-tagline">
+      Ilustration - Collage - Dark art - Conceptual worlds
+    </p>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" routerLink="/"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contactus">ContactUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/location">Location</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="miregistro">
+    <div class="form-group">
+      <label for="nombres" class="form-label">Nombres</label>
+      <input type="email" class="form-control" id="nombres" aria-describedby="emailHelp">
+    </div>
+
+    <div class="form-group">
+      <label for="apellidos" class="form-label">Apellidos</label>
+      <input type="email" class="form-control" id="apellidos" aria-describedby="emailHelp">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1" class="form-label">Escribenos</label>
+      <textarea type="" class="form-control" id="exampleInputPassword1">
+        </textarea>
+    </div>
+
+    <button type="button" class="btn btn-light">Enviar</button>
   </div>
-  <div class="form-group">
-    <label for="apellidos">Apellidos</label>
-    <input type="email" class="form-control" id="apellidos" placeholder="Apellidos">
-  </div>
-  <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-    <label for="escribenos">Escribenos</label>
-    <textarea class="form-control" id="escribenos" rows="3"
-      placeholder="Escribenos para estar en contacto contigo"></textarea>
-  </div>
-</div>
 
 <app-footer></app-footer>
