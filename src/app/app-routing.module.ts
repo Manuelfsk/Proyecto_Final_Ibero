@@ -49,7 +49,7 @@ const routes: Routes = [
 {path:'', title:'', component:NavbarComponent,pathMatch:"full"},
 {path:'home', title:'Home', component:NavbarComponent,pathMatch:"full"},
 {path:'gallery', title:'Gallery', component:GalleryComponent,pathMatch:"full"},
-{path:'collages', title:'Collages', component:CollagesComponent,pathMatch:"full"},
+{path:'collages', title:'Collages', component:collagesComponent,pathMatch:"full"},
 {path:'contactus', title:'ContacUs', component:ContactusComponent,pathMatch:"full"},
 {path:'login', title:'Login', component:LoginComponent,pathMatch:"full"},
 {path:'location', title:'Location', component:LocationComponent,pathMatch:"full"},
