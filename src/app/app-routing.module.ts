@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BodyhomeComponent } from './components/bodyhome/bodyhome.component';
-//import { CollagesComponent } from './components/collages/collages.component';
+
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { LocationComponent } from './components/location/location.component';
@@ -13,6 +13,8 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { PhotographyComponent } from './components/photography/photography.component';
 import { ScapesComponent } from './components/scapes/scapes.component';
+import { CollagesComponent } from 'PROYECTO-FINAL-IBERO-2024/src/app/components/collages/collages.component';
+import { NavbarComponent } from 'PROYECTO-FINAL-IBERO-2024/src/app/components/navbar/navbar.component';
 
 
 
@@ -49,7 +51,7 @@ const routes: Routes = [
 {path:'', title:'', component:NavbarComponent,pathMatch:"full"},
 {path:'home', title:'Home', component:NavbarComponent,pathMatch:"full"},
 {path:'gallery', title:'Gallery', component:GalleryComponent,pathMatch:"full"},
-{path:'collages', title:'Collages', component:collagesComponent,pathMatch:"full"},
+{path:'collages', title:'Collages', component:CollagesComponent,pathMatch:"full"},
 {path:'contactus', title:'ContacUs', component:ContactusComponent,pathMatch:"full"},
 {path:'login', title:'Login', component:LoginComponent,pathMatch:"full"},
 {path:'location', title:'Location', component:LocationComponent,pathMatch:"full"},
