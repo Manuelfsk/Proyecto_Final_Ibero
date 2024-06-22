@@ -1,11 +1,11 @@
 
-/* div#descripcion {
+* div#descripcion {
   font-size: 20px;
   text-align: start;
 
 }
 
-/* p.descripcion {
+* p.descripcion {
   font-size: 20px;
   font-family: serif;
   text-align: justify;
@@ -15,15 +15,15 @@
 
 }
 
-/* p.site-description.slogan.site-tagline {
+* p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
   letter-spacing: 5px;
 }
 
-/* BODY */
+* BODY */
 
-/* #Sobre_nosotros{
+* #Sobre_nosotros{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,7 +41,7 @@ h1 {
   color: rgb(226, 223, 223);
 }
 
-/* .imagenfondo{
+* .imagenfondo{
   background-image: url(../../../assets/bodyhome/bannerfijo.png);
   height: auto;
   width: auto;
@@ -60,7 +60,7 @@ h1 {
 
 
 }
-/* div#aboutUsContainer {
+* div#aboutUsContainer {
   background: #00000030;
   border-radius: 40px 0px 40px 0px;
 } */

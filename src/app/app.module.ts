@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 
+
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -50,6 +51,9 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
     UsuariosComponent,
     PhotographyComponent,
     ScapesComponent,
+  
+
+
 
   ],
 

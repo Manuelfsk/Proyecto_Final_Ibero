@@ -1,7 +1,7 @@
 <app-menu></app-menu>
 <div class="ventana">
     <div class="productos" >Productos</div>
-    <div><img class="imgprod" src="/assets/agregar.png" (click)="AbrirModal()"></div>
+    <div><img class="imgprod" src="../../../assets/plus-sign-button_17340.png" (click)="AbrirModal()"></div>
     <!-- tabla de ingresar datos -->
     <table class="table table-hover">
         <thead class="thead-dark">
@@ -23,10 +23,10 @@
                 <td>{{item.precio | currency}}</td>
                 <td>
                     <div *ngIf="item.estado == 1">Activo</div>
-                    <div *ngIf="item.estado == 0">InActivo</div>                
+                    <div *ngIf="item.estado == 0">InActivo</div>
                 </td>
             </tr>
-            
+
         </tbody>
     </table>
 </div>
