@@ -16,7 +16,7 @@ export class CategoriasComponent implements OnInit {
   }
 
   constructor(private peticion: PeticionService) { }
-  
+
   Idseleccionado: string = ""
   cod_cat:string = ""
   cod_prod: string = ""

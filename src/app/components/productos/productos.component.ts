@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import { PeticionService } from 'src/app/servicios/peticion.service';
 
@@ -16,6 +18,7 @@ export class ProductosComponent implements OnInit {
   ngOnInit(): void {
     this.CargarTdoas()
     this.CargarTdoasCategorias()
+
   }
 
   constructor(private peticion: PeticionService) { }
