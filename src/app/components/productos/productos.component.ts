@@ -57,6 +57,8 @@ export class ProductosComponent implements OnInit {
       (res: any) => {
         console.log(res)
         this.datosCategorias = res.respuesta.data
+        console.log("----------->>>>>")
+        console.log(this.datosCategorias)
 
       }
     )

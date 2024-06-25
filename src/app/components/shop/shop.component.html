@@ -1,7 +1,6 @@
 <app-navbar></app-navbar>
 
-<h2>bienvenidos</h2>
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="row col-6 col-sm-6 col-md-4 col-lg-3" *ngFor=" let item of datos">
             <div class="card" style="width: 18rem;">
@@ -14,29 +13,49 @@
             </div>
         </div>
     </div>
+</div> -->
+
+
+<!-- eduardo -->
+
+<header >
+  <h1 id="shopbycategory">Shop by Category</h1>
+</header>
+
+<!-- <section class="category-list"> -->
+
+<div>
+    <button class="botoncitos"><a routerLink="/gallery">Album Cover Art</a></button>
+    <button class="botoncitos"><a routerLink="/collage">Collages</a></button> <!--crear componente  footer -->
+    <button class="botoncitos"><a routerLink="/Photography">Photography</a></button> <!--crear componente  footer -->
+    <button class="botoncitos"><a routerLink="/Scapes">Scapes</a></button> <!--crear componente  footer -->
+
+  </div>
+
+<!-- </section> -->
+
+
+<!-- CARD -->
+<div class="container">
+  <div class="row ">
+    <div class=" col-6 col-sm-6 col-md-4 col-lg-3 mx-3 my-3" *ngFor=" let item of datos">
+     
+      <div class="card border border-secondary" style="width: 18rem;">
+        <img src="{{item.imagen}}" class="card-img-top" alt="imagenes shop">
+        <div class="card-body tarjeticas">
+          <h5 class="card-title">{{item.nombre}}</h5>
+          <p class="card-text">descripción del producto.</p>
+          <p class="card-text">{{item.precio | currency}}</p>
+          <a href="http://wa.me/+3124881209?text='Estoy interesado en este producto {{item.nombre}} y tiene un costeo {{item.precio}}" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </div>
 
 
 
 
-
-
-
-
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3" *ngFor=" let item of datos">
-            <div class="itemproducto">
-                <div class="miproducto">
-                    <img class="imgproduc" src="{{item.imagen}}" >
-                </div>
-                <div class="clsnombreproducto">{{item.nombre}}</div>
-                <div class="clsprecio">{{item.precio}}</div>
-                <div class="btn btn-primary">Comprar</div>
-
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <app-footer></app-footer>
