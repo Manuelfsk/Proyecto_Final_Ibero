@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
 /* body {
   background: rgb(32, 83, 158);
   background: linear-gradient(180deg, rgba(32, 83, 158, 0.4) 0%, rgba(164, 152, 186, 0.3) 49%, rgba(227, 232, 227, 0.2) 100%);
+=======
+body {
+  /* background: rgb(158, 32, 148); */
+  background: linear-gradient(180deg, rgba(187, 187, 185, 0.4) 0%, rgba(223, 220, 230, 0.3) 49%, rgba(214, 214, 214, 0.2) 100%);
+>>>>>>> 581b96730b7f98e4d1e81decc57f1ac17432e8fb
 
 } */
 
@@ -16,11 +22,15 @@
 }
 
 .ventana {
-  background-color: #9c8477;
-  height: 30px;
+  background-color: #575452;
+  height: 45px;
+  border-radius: 0px 0px 10px 10px;
   position: absolute;
-  margin-left: 200px;
-  width: calc(100% - 200px);
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  font-size: 25px;
+  font-style: italic;
+
   color: white;
   /* overflow: auto; */
 }

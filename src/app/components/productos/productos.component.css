@@ -1,7 +1,6 @@
-.imgprod {
-    width: 50px;
-    margin-top: 8px;
-    margin-left: calc(100% - 50px);
-    margin-bottom: 8px;
-   cursor: pointer;
+img.imgprod{
+  vertical-align: middle;
+    width: 45px;
+    margin-right: px;
+    padding: 2px;
 }

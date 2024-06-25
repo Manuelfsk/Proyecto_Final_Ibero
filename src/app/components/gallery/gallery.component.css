@@ -1,4 +1,4 @@
-/* #testing {
+#testing {
   margin-right: 0%;
   padding-right: 0%;
   padding: 0%;
@@ -70,14 +70,6 @@ p.site-description.slogan.site-tagline {
   flex-wrap: wrap;
 }
 
-.imagenfondo {
-  background-image: url(../../../assets/img-navbar/bannerfijo.png);
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
 
 #aboutUsContainer {
   max-height: none;
@@ -189,6 +181,7 @@ p.site-description.slogan.site-tagline {
   align-items: center;
   gap: 45px;
   padding-bottom: 5%;
+  margin-top: 70px;
 }
 
 .figure-caption{
@@ -201,4 +194,14 @@ p.site-description.slogan.site-tagline {
       flex-grow: 1;
       position: relative;
   }
-} */
+}
+
+.imagenfondo {
+  background-image: url(../../../assets/img-navbar/bannerfijo.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
