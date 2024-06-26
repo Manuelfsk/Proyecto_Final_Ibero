@@ -2,13 +2,14 @@
 
 
 
-<header >
-  <h1 id="shopbycategory">Shop by Category</h1>
-</header>
+
+<h1 id="shopbycategory">Shop by Category</h1>
 
 
 
-<div class="botonesmenu">
+
+
+  <div class="botonesmenu">
     <button class="botoncitos"><a href="#">Album Cover Art </a></button>
     <button class="botoncitos"><a href="#">Collages</a></button>
     <button class="botoncitos"><a href="#">Photography</a></button>
@@ -19,24 +20,23 @@
 
   <div class="container">
     <div class="row">
-    <div class="col col-sm-12 col-md-6 col-lg-4">
-      <div class="card-container " *ngFor="let item of datos">
+     <div class="col col-sm-12 col-md-6 col-lg-4">
+      <div class="card-container "*ngFor="let item of datos">
 
         <div class=" card float-left overflow-hidden ">
-        <img class="my-3 border" src="{{item.imagen}}">
+        <img class="my-3 " src="{{item.imagen}}">
         <div class="card-content col-12 ">
           <h3>{{item.nombre}}</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>{{item.precio}}</p>
+          <p class="textoprecio">{{item.precio}}</p>
 
           <a href="" class="btn">Comprar</a>
          </div>
         </div>
+       </div>
       </div>
+     </div>
     </div>
-    </div>
-    </div>
-
 
 
 <app-footer></app-footer>

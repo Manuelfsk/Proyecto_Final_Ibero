@@ -1,3 +1,6 @@
+
+
+
 #testing {
   margin-right: 0%;
   padding-right: 0%;
@@ -12,8 +15,6 @@ h1 {
   padding-top: 66px;
   color: rgb(226, 223, 223);
 }
-
-
 
 div#descripcion {
   font-size: 20px;
@@ -33,8 +34,6 @@ p.site-description.slogan.site-tagline {
   text-align: center;
   letter-spacing: 5px;
 }
-
-
 .imagenfondo {
   background-image: url(../../../assets/img-navbar/bannerfijo.png);
   height: auto;
@@ -126,16 +125,15 @@ a[_ngcontent-ng-c541629009] {
 /* CARD */
 *{
   margin: 0px;
-  padding: 4px;
+  padding: 5px;
   box-sizing: border-box;
-  /* font-family: sans-serif; */
 }
 
-.card-container{
+.container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
 
@@ -149,12 +147,10 @@ a[_ngcontent-ng-c541629009] {
 }
 
 
-.pruebaimagen{
+/* .pruebaimagen{
   width: 50%;
   height: 300px;
-  /* overflow:wrap; */
-
-}
+} */
 
 .card-content{
   padding: 16px;
@@ -164,15 +160,18 @@ a[_ngcontent-ng-c541629009] {
 .card-content h3{
   font-size: 28px;
   margin-bottom: 8px;
-
 }
 
 .card-content p{
   color: #666;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.3;
-
 }
+
+p.textoprecio {
+  font-weight: 600;
+}
+
 
 .card-content .btn{
   display: inline-block;
@@ -186,8 +185,8 @@ a[_ngcontent-ng-c541629009] {
 }
 
 
-.btn:hover {
-  background-color: #0056b3;
+.card-content .btn:hover {
+  background-color: #001124;
 }
 
 
