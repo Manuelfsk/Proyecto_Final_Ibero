@@ -1,3 +1,5 @@
+
+
 #testing {
   margin-right: 0%;
   padding-right: 0%;
@@ -6,6 +8,8 @@
 
 div#footer {
   background: #353535;
+  /* margin-top: 20px; */
+  /* padding-top: 30px; */
   padding: 10%;
   color: #c3c3c3;
 }
@@ -32,10 +36,10 @@ a {
 
 h1 {
   text-align: center;
-
+  /* margin: 20px 20px 10px; */
   font-family: ui-monospace;
   font-size: 50px;
-
+  /* margin-bottom: -16px; */
   letter-spacing: 5px;
   padding-top: 66px;
   color: rgb(226, 223, 223);
@@ -54,12 +58,14 @@ p.descripcion {
   text-align: justify;
   color: rgb(199, 199, 199);
   padding-top: 5%;
-
+  /* margin-top: 20px; */
 }
 
 p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
+  /* margin: 10px;
+  margin-bottom: 10px; */
   letter-spacing: 5px;
 }
 
@@ -127,6 +133,7 @@ p.site-description.slogan.site-tagline {
   }
 }
 
+/* mascss */
 
 .navbar{
   display: flex;
@@ -169,11 +176,16 @@ p.site-description.slogan.site-tagline {
 
 .figure{
   justify-content: space-between;
+  /* background-color: blue; */
   align-items: flex-start;
   width:350px;
   height:350px;
+  /* transition: 1s all ease; */
 }
-
+/* .figure:hover{
+  width: 370px;
+  height: 370px;
+} */
 .contenedordecollage1 {
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +205,7 @@ p.site-description.slogan.site-tagline {
       flex-basis: 100%;
       flex-grow: 1;
       position: relative;
+
   }
 }
 
@@ -205,3 +218,47 @@ p.site-description.slogan.site-tagline {
   background-size: cover;
 }
 
+/* ---------------------------------------- */
+
+.colorfuente.active{
+  color: rgb(255 255 255) !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+  background-color: #5d5955;
+}
+
+
+
+/* EXPERIMENTO HOVER */
+
+.navbar-nav a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.navbar-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, #ffffff, #ebe7e7);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-nav a:hover::before {
+  transform: scaleX(1);
+}
+
+.navbar-nav[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+/* EXPERIMETNO HOVER */

@@ -216,3 +216,13 @@ p.site-description.slogan.site-tagline {
   background-size: cover;
 }
 
+/* ---------------------------------------- */
+
+.colorfuente.active{
+  color: rgb(255 255 255) !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+  background-color: #5d5955;
+}

@@ -4,40 +4,10 @@
   padding: 0%;
 }
 
-div#footer {
-  background: #353535;
-  /* margin-top: 20px; */
-  /* padding-top: 30px; */
-  padding: 10%;
-  color: #c3c3c3;
-}
-
-.mititulo {
-  font-size: 22px;
-  font-style: italic;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.misenlaces a {
-  color: white;
-}
-
-div#misenlaces a {
-  color: whitesmoke;
-}
-
-a {
-  color: whitesmoke;
-}
-
-
 h1 {
   text-align: center;
-  /* margin: 20px 20px 10px; */
   font-family: ui-monospace;
   font-size: 50px;
-  /* margin-bottom: -16px; */
   letter-spacing: 5px;
   padding-top: 66px;
   color: rgb(226, 223, 223);
@@ -56,23 +26,14 @@ p.descripcion {
   text-align: justify;
   color: rgb(199, 199, 199);
   padding-top: 5%;
-  /* margin-top: 20px; */
 }
 
 p.site-description.slogan.site-tagline {
   color: rgb(207, 207, 207);
   text-align: center;
-  /* margin: 10px;
-  margin-bottom: 10px; */
   letter-spacing: 5px;
 }
 
-#Sobre_nosotros {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
 .imagenfondo {
   background-image: url(../../../assets/img-navbar/bannerfijo.png);
@@ -83,31 +44,11 @@ p.site-description.slogan.site-tagline {
   background-size: cover;
 }
 
-#aboutUsContainer {
-  max-height: none;
-  max-width: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10%;
-}
-
-.col-9 {
-  flex: 0%;
-}
-
-.aboutUs {
-  font-size: 300%;
-  text-align: center;
-  width: auto;
-  margin: 0%;
-  padding: 0;
-}
-
 .navbar {
   display: flex;
   justify-content: center;
   top: 5px;
+  cursor: pointer;
 }
 
 .navbar-collapse {
@@ -136,12 +77,10 @@ p.site-description.slogan.site-tagline {
   }
 }
 
+/* ------------------------------------------------------ */
 
-/* SHOP BY CATEGORIES */
+/* SHOP BY CATEGORIES BOTONES */
 
-header {
-  padding: 30px;
-}
 
 nav li {
   display: inline
@@ -152,33 +91,27 @@ h1#shopbycategory {
   padding: 30px;
   font-size:65px;
 }
+a {
+  color: whitesmoke;
+}
 
 .botoncitos {
-  background: #0707078a;
+  background: #5f5e5ecb;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  width: 145px;
+  width: 155px;
   text-align: center;
   height: 56px;
   border: slategray;
   font-size: 17px;
-
+}
+.botoncitos:hover{
+  background-color: #474747;
 }
 
 a[_ngcontent-ng-c541629009] {
   color: #4b4b4b;
-}
-
-
-
-.imagenfondo{
-  background-image: url(../../../assets/bodyhome/bannerfijo.png);
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 
 .botonesmenu {
@@ -188,12 +121,12 @@ a[_ngcontent-ng-c541629009] {
 }
 
 
-
+/* ------------------------------------------------- */
 
 /* CARD */
 *{
   margin: 0px;
-  padding: 0px;
+  padding: 4px;
   box-sizing: border-box;
   /* font-family: sans-serif; */
 }
@@ -258,34 +191,34 @@ a[_ngcontent-ng-c541629009] {
 }
 
 
-/* css fernando */
+/* EXPERIMENTO HOVER */
 
-.itemproducto{
-    padding: 15px;
-    border:solid 1px #000000;
-    margin-bottom: 14px;
-    border-radius: 9px;
-}
-
-img.miproducto{
-    width: 60px;
-    height: 60px;
-    border-radius: 14px;
-}
-.imgproduc{
-    width: 59px;
-}
-.clsnombreprducto{
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: -2px;
-    font-weight: 600;
-    font-style: italic;
+.navbar-nav a {
+  position: relative;
+  display: block;
+  padding: 5px;
 }
 
-.clsprecio{
-    text-align: center;
-    font-size: 23px;
-    font-style: italic;
-    margin-bottom: 13px;
+.navbar-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, #ffffff, #ebe7e7);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
 }
+
+.navbar-nav a:hover::before {
+  transform: scaleX(1);
+}
+
+.navbar-nav[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+/* EXPERIMETNO HOVER */
