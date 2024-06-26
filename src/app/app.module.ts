@@ -30,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductosComponent } from './components/productos/productos.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { ActivarComponent } from './components/activar/activar.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
     UsuariosComponent,
     PhotographyComponent,
     ScapesComponent,
+    ActivarComponent,
   
 
 
