@@ -14,6 +14,7 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { PhotographyComponent } from './components/photography/photography.component';
 import { ScapesComponent } from './components/scapes/scapes.component';
+import { ActivarComponent } from './components/activar/activar.component';
 // import { NavbarComponent } from '/components/navbar/NavbarComponent';
 // import { CollagesComponent } from './components/scapes/CollagesComponent';
 
@@ -49,17 +50,13 @@ const routes: Routes = [
   { path: "productos", component: ProductosComponent, pathMatch: "full" },
   // 10. ruta usuarios
   { path: "usuarios", component: UsuariosComponent, pathMatch: "full" },
+  // 11. ruta photography
+  { path: 'photography', title: 'Photography', component: PhotographyComponent, pathMatch: "full" },
+  // 12. ruta scapes
+  { path: 'scapes', title: 'Scapes', component: ScapesComponent, pathMatch: "full" },
+  // 13. ruta activar
+  { path: "activar/:correo/:codigo", component: ActivarComponent, pathMatch: "full" },
 
-// {path:'', title:'', component:NavbarComponent,pathMatch:"full"},
-// {path:'home', title:'Home', component:NavbarComponent,pathMatch:"full"},
-{path:'gallery', title:'Gallery', component:GalleryComponent,pathMatch:"full"},
-// {path:'collages', title:'Collages', component:CollagesComponent,pathMatch:"full"},
-{path:'contactus', title:'ContacUs', component:ContactusComponent,pathMatch:"full"},
-{path:'login', title:'Login', component:LoginComponent,pathMatch:"full"},
-{path:'location', title:'Location', component:LocationComponent,pathMatch:"full"},
-{path:'shop', title:'Shop', component:ShopComponent,pathMatch:"full"},
-{path:'photography', title:'Photography', component:PhotographyComponent,pathMatch:"full"},
-{path:'scapes', title:'Scapes', component:ScapesComponent,pathMatch:"full"},
 ];
 
 @NgModule({
