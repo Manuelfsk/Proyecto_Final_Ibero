@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  /* background: rgb(158, 32, 148); */
+/* body {
+
   background: linear-gradient(180deg, rgba(187, 187, 185, 0.4) 0%, rgba(223, 220, 230, 0.3) 49%, rgba(214, 214, 214, 0.2) 100%);
 
 } */
@@ -43,6 +43,8 @@ body {
   width: 40px;
   cursor: pointer;
 }
+
+/* NAVBAR */
 
 
 
