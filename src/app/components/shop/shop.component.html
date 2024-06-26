@@ -17,116 +17,25 @@
   </div>
 
 
-    <div class="card-container">
+  <div class="container">
+    <div class="row">
+    <div class="col col-sm-12 col-md-6 col-lg-4">
+      <div class="card-container " *ngFor="let item of datos">
 
-    <div class=" card float-left overflow-hidden ">
-    <img src="../../../assets/shop/1.jpg">
-    <div class="card-content col-12 ">
-      <h3>card 1</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <a href="" class="btn">Buy</a>
-     </div>
-    </div>
-
-<div class="card float-left overflow-hidden">
-        <img src="../../../assets/shop/estasi.jpg">
-          <div class="card-content col-12">
-            <h3>card 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="" class="btn">Buy</a>
-           </div>
-          </div>
-
-      <div class="card float-left overflow-hidden">
-        <img src="../../../assets/shop/11.jpg">
-        <div class="card-content col-12">
-          <h3>card 1</h3>
+        <div class=" card float-left overflow-hidden ">
+        <img class="my-3 border" src="{{item.imagen}}">
+        <div class="card-content col-12 ">
+          <h3>{{item.nombre}}</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a href="" class="btn">Buy</a>
+          <p>{{item.precio}}</p>
+
+          <a href="" class="btn">Comprar</a>
          </div>
         </div>
-
-        <div class="card float-left overflow-hidden">
-          <img src="../../../assets/shop/13.jpg">
-          <div class="card-content col-12">
-            <h3>card 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="" class="btn">Buy</a>
-           </div>
-          </div>
-
-          <div class="card float-left overflow-hidden">
-            <img src="../../../assets/shop/14.jpg">
-            <div class="card-content col-12">
-              <h3>card 1</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" class="btn">Buy</a>
-             </div>
-            </div>
-
-            <div class="card float-left overflow-hidden">
-              <img src="../../../assets/shop/9.jpg">
-              <div class="card-content col-12">
-                <h3>card 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="" class="btn">Buy</a>
-               </div>
-              </div>
-
-              <div class="card float-left overflow-hidden">
-                <img src="../../../assets/shop/17.jpg">
-                <div class="card-content col-12">
-                  <h3>card 1</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                  <a href="" class="btn">Buy</a>
-                 </div>
-                </div>
-
-                <div class="card float-left overflow-hidden">
-                  <img src="../../../assets/shop/15.jpg">
-                  <div class="card-content col-12">
-                    <h3>card 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="" class="btn">Buy</a>
-                   </div>
-                  </div>
-
-                  <div class="card float-left overflow-hidden">
-                    <img src="../../../assets/shop/3.jpg">
-                    <div class="card-content col-12">
-                      <h3>card 1</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <a href="" class="btn">Buy</a>
-                     </div>
-                    </div>
-
-                    <div class="card float-left overflow-hidden">
-                      <img src="../../../assets/shop/2.png">
-                      <div class="card-content col-12">
-                        <h3>card 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="" class="btn">Buy</a>
-                       </div>
-                      </div>
-
-                      <div class="card float-left overflow-hidden">
-                        <img src="../../../assets/shop/16.jpg">
-                        <div class="card-content col-12">
-                          <h3>card 1</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          <a href="" class="btn">Buy</a>
-                         </div>
-                        </div>
-
-                        <div class="card float-left overflow-hidden">
-                          <img src="../../../assets/shop/12.jpg">
-                          <div class="card-content col-12">
-                            <h3>card 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="" class="btn">Buy</a>
-                           </div>
-                          </div>
-  </div>
+      </div>
+    </div>
+    </div>
+    </div>
 
 
 
