@@ -6,6 +6,39 @@
   padding: 0%;
 }
 
+/* EXPERIMENTO HOVER */
+
+.navbar-nav a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.navbar-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, #ffffff, #ebe7e7);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-nav a:hover::before {
+  transform: scaleX(1);
+}
+
+.navbar-nav[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+/* EXPERIMETNO HOVER */
+
+
 div#footer {
   background: #353535;
   /* margin-top: 20px; */

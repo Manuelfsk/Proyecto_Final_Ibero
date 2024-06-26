@@ -184,7 +184,7 @@ p.site-description.slogan.site-tagline {
   width: 370px;
   height: 370px;
 } */
-.contenedordecollage0 {
+.contenedorphoto {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -214,4 +214,15 @@ p.site-description.slogan.site-tagline {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+/* ---------------------------------------- */
+
+.colorfuente.active{
+  color: rgb(255 255 255) !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+  background-color: #5d5955;
 }
