@@ -26,11 +26,12 @@ import { RouterOutlet } from '@angular/router';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ProductosComponent } from './components/productos/productos.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { ActivarComponent } from './components/activar/activar.component';
+import { InterceptorService } from './servicios/interceptor.service';
 
 
 @NgModule({
@@ -52,11 +53,8 @@ import { ActivarComponent } from './components/activar/activar.component';
     UsuariosComponent,
     PhotographyComponent,
     ScapesComponent,
-    ActivarComponent,
+    ActivarComponent
   
-
-
-
   ],
 
   imports: [
@@ -66,7 +64,11 @@ import { ActivarComponent } from './components/activar/activar.component';
     HttpClientModule,
   ],
 
-  providers: [],
+  providers: [{
+    provide:HTTP_INTERCEPTORS,
+    useClass: InterceptorService,
+    multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

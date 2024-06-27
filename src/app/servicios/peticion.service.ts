@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+declare var Swal:any
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,6 +17,13 @@ export class PeticionService {
     let promise = new Promise((resolve, reject) => {
       this.http.post(url, data).toPromise().then(
         (res: any) => {
+          if(res.permisos == true){
+            Swal.fire({
+              icon: "error",
+              title: "Restricción de acceso",
+              text: res.mensaje,
+            });
+          }
           resolve(res)
         }
       ).catch((error) => {

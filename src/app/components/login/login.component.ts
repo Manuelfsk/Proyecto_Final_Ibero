@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { PeticionService } from 'src/app/servicios/peticion.service';
+
+
+declare var Swal: any
+
 
 @Component({
   selector: 'app-login',
@@ -7,23 +12,56 @@ import { PeticionService } from 'src/app/servicios/peticion.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  constructor(private peticion: PeticionService, private router: Router) { }
+
+
   ngOnInit(): void {
-    
-  }
-  constructor(private peticion:PeticionService){
-    
+
   }
 
-  emailogin:string = ""
-  password:string = ""
-  datos:any[] =[]
+  
+  email: string = ""
+  password: string = ""
+  datos: any[] = []
 
-  logear(){
-    console.log(this.emailogin)
+  logear() {
+    let post = {
+      Host: this.peticion.urlhost,
+      path: "/usuarios/login",
+      payload: {
+        email: this.email,
+        password: this.password,
+       
+      }
+    }
+
+    console.log(this.email)
+    console.log("--------tratando-----")
     console.log(this.password)
+    this.peticion.Post(post.Host + post.path, post.payload).then(
+      (res: any) => {
+        console.log(res)
+        if (res.state == true) {
+          Swal.fire({
+            icon: "success",
+            title: "Bienvenido a Altschmerz Ilustration",
+            text: res.mensaje,
+          });
+          // acceso a la zona privada
+          this.router.navigate(["dashboard"])
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Ouch!!!!",
+            text: res.mensaje,
+          });
+        }
+      })
 
-    this.datos.push({emailogin: this.emailogin, password:this.password})
-    console.log(this.datos)
+
+
+
   }
 
 

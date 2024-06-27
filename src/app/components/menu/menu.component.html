@@ -2,15 +2,18 @@
 <div class="menuDash">
     <div>
         <div ><img class="imgdash" src="../../../assets/portrait_3917576.png" alt="imagen trabajador" ></div>
-        <div class="nombre">Nombre de usuario</div>
-        <div class="rol">Rol de usuario </div>
+        <div class="nombre">{{nombre}}</div>
+        <div>
+            <div *ngIf="rol == '1'">Administrador</div>
+            <div *ngIf="rol == '2'">cliente</div>
+        </div>
     </div>
     <div class="item ">
         <div class="itemmenu border-bottom" routerLink=""> <img class="imgperf "src="../../../assets/profile_162855.png" alt="ajuste perfil">Perfil</div>
-        <div class="itemmenu border-bottom" routerLink="/usuarios"> <img class="imgperf "src="../../../assets/people_8364996.png"> Usuarios</div>
-        <div class="itemmenu border-bottom" routerLink="/categorias"> <img class="imgperf "src="../../../assets/catcat (2).png"> Categorias</div>
-        <div class="itemmenu border-bottom" routerLink="/productos"> <img class="imgperf "src="../../../assets/prodprod.png"> Productos</div>
-        <div class="itemmenu border-bottom" routerLink="/login"> <img class="imgperf "src="../../../assets/exit_149407.png"> Salir</div>
+        <div class="itemmenu border-bottom" routerLink="/usuarios" *ngIf="rol == '1'"> <img class="imgperf "src="../../../assets/people_8364996.png"> Usuarios</div>
+        <div class="itemmenu border-bottom" routerLink="/categorias" *ngIf="rol == '1'"> <img class="imgperf "src="../../../assets/catcat (2).png"> Categorias</div>
+        <div class="itemmenu border-bottom" routerLink="/productos" *ngIf="rol == '1'"> <img class="imgperf "src="../../../assets/prodprod.png"> Productos</div>
+        <div class="itemmenu border-bottom" (click)="CerrarSession()"> <img class="imgperf "src="../../../assets/exit_149407.png"> Salir</div>
     </div>
 </div>
 
