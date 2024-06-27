@@ -145,6 +145,7 @@ div#primerasimagenes {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 
 }
 
@@ -167,7 +168,7 @@ div#primerasimagenes {
 
 
 h1.servicios {
-  color: black;
+  color: #4b4b4b;
   font-size: 300%;
 
 }

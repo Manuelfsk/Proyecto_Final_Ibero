@@ -1,5 +1,9 @@
 
-
+*{
+  margin: 0px;
+  /* padding: 5px; */
+  box-sizing: border-box;
+}
 
 #testing {
   margin-right: 0%;
@@ -47,6 +51,7 @@ p.site-description.slogan.site-tagline {
   display: flex;
   justify-content: center;
   top: 5px;
+  padding: 40px;
   cursor: pointer;
 }
 
@@ -123,19 +128,18 @@ a[_ngcontent-ng-c541629009] {
 /* ------------------------------------------------- */
 
 /* CARD */
-*{
-  margin: 0px;
-  padding: 5px;
-  box-sizing: border-box;
-}
+
 
 .container{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  /* justify-content: center; */
+  /* flex-wrap: wrap;  */
+  margin-top: 75px;
 
 }
+
+
+
 
 .card{
   width: 325px;
@@ -154,6 +158,10 @@ a[_ngcontent-ng-c541629009] {
 
 .card-content{
   padding: 16px;
+}
+
+img.my-3 {
+  padding: 10px;
 }
 
 
