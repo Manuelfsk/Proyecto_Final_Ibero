@@ -16,10 +16,16 @@ div#misenlaces a {
 a {
   color: whitesmoke;
 }
-.navbar{
+/* .navbar{
   display: flex;
   justify-content:center;
 
+} */
+.navbar{
+  display: flex;
+  justify-content:center;
+  top: 5px;
+  padding: 40px;
 }
 .navbar-collapse {
   flex-basis: 0;

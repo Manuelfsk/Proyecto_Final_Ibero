@@ -133,14 +133,14 @@ p.site-description.slogan.site-tagline {
 
 /* mascss */
 
-.navbar{
+/* .navbar{
   display: flex;
   justify-content:center;
   top: 5px;
 
 
 
-}
+} */
 .navbar-collapse {
   flex-basis: 0;
   flex-grow: 0;
