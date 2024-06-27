@@ -125,7 +125,7 @@ a[_ngcontent-ng-c541629009] {
 /* CARD */
 *{
   margin: 0px;
-  padding: 5px;
+  /* padding: 5px; */
   box-sizing: border-box;
 }
 

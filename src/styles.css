@@ -1,15 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-/* body {
 
-  background: linear-gradient(180deg, rgba(187, 187, 185, 0.4) 0%, rgba(223, 220, 230, 0.3) 49%, rgba(214, 214, 214, 0.2) 100%);
 
-} */
 
-/* #footer {
-  background: #353535;
-  padding: 10%;
-  color: #c3c3c3;
-}
 
 .ajustenav {
   margin-top: -5px;
@@ -42,99 +33,10 @@
 .imgvent {
   width: 40px;
   cursor: pointer;
-} */
-
-/* NAVBAR */
-
-/* FOOTER */
-/* div#footer {
-  background: #353535;
-  padding: 10%;
-  color: #c3c3c3;
-
-}
-
-.menu-footer li:hover {
-  color:#3a6fda;
-  font-weight: 500;
-}
-
-.row.caja-footer {
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: -80px;
-  margin-bottom: 55px;
-}
-
-.copyright-text a:hover {
-  color:rgb(78, 241, 201);
-}
-.copyright-text {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  line-height: 28px;
-  font-weight: 300;
-} */
-/* --------------------------------- */
-
-<<<<<<< HEAD
-=======
-.ventana {
-  background-color: #575452;
-  height: 45px;
-  border-radius: 0px 0px 10px 10px;
-  position: absolute;
-  margin-left: 240px;
-  width: calc(100% - 240px);
-  font-size: 25px;
-  font-style: italic;
-  color: white;
-}
-
-
-.btnadd{
-  background-color:#8bc34a ;
-  width: 39px;
-  text-align: center;
-  color: white;
-  border-radius: 50%;
-  font-size: 23px;
-  font-weight: 700;
-  margin: 4px;
-  position: absolute;
-  cursor: pointer;
-  top: 25px;
-  right: 8px;
-
-}
-.datos {
-  margin-top: 37px;
-}
-
-
- img.imgprod{
-  vertical-align: middle;
-    width: 45px;
-    margin-right: px;
-    padding: 2px;
-}
-
-.productos {
-  padding-left: 10px;
-}
-
-.imgprod {
-  width: 50px;
-  margin-top: 8px;
-  margin-left: calc(100% - 50px);
-  margin-bottom: 8px;
-  cursor: pointer;
 }
 
 
 
-
->>>>>>> e99df6b6209925df42860399c588653ba9d1c7c6
 
 
 #testing {
