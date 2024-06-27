@@ -1,4 +1,13 @@
 
+<<<<<<< HEAD
+
+*{
+  margin: 0px;
+  /* padding: 5px; */
+  box-sizing: border-box;
+}
+=======
+>>>>>>> 5de85e637a9749ab83573d9cdb9978f848dfc3cb
 
 #testing {
   margin-right: 0%;
@@ -134,6 +143,16 @@ a[_ngcontent-ng-c541629009] {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
+<<<<<<< HEAD
+}
+
+.container{
+  display: flex;
+  /* justify-content: center; */
+  /* flex-wrap: wrap;  */
+  margin-top: 75px;
+=======
+>>>>>>> 5de85e637a9749ab83573d9cdb9978f848dfc3cb
 
 }
 
