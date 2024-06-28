@@ -139,16 +139,9 @@ a[_ngcontent-ng-c541629009] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
-.container{
-  display: flex;
-  /* justify-content: center; */
-  /* flex-wrap: wrap;  */
-  margin-top: 75px;
-
-}
 
 
 
@@ -163,10 +156,6 @@ a[_ngcontent-ng-c541629009] {
 }
 
 
-/* .pruebaimagen{
-  width: 50%;
-  height: 300px;
-} */
 
 .card-content{
   padding: 16px;

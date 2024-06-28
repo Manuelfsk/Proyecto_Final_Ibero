@@ -1,3 +1,5 @@
+
+
 #testing {
   margin-right: 0%;
   padding-right: 0%;
@@ -133,14 +135,14 @@ p.site-description.slogan.site-tagline {
 
 /* mascss */
 
-/* .navbar{
+.navbar{
   display: flex;
   justify-content:center;
   top: 5px;
 
 
 
-} */
+}
 .navbar-collapse {
   flex-basis: 0;
   flex-grow: 0;
@@ -184,7 +186,7 @@ p.site-description.slogan.site-tagline {
   width: 370px;
   height: 370px;
 } */
-.contenedorphoto {
+.contenedordecollage1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -226,3 +228,37 @@ p.site-description.slogan.site-tagline {
 
   background-color: #5d5955;
 }
+
+
+
+/* EXPERIMENTO HOVER */
+
+.navbar-nav a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.navbar-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, #ffffff, #ebe7e7);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-nav a:hover::before {
+  transform: scaleX(1);
+}
+
+.navbar-nav[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+/* EXPERIMETNO HOVER */

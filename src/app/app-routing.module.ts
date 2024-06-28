@@ -1,4 +1,5 @@
 
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BodyhomeComponent } from './components/bodyhome/bodyhome.component';
@@ -16,6 +17,7 @@ import { PhotographyComponent } from './components/photography/photography.compo
 import { ScapesComponent } from './components/scapes/scapes.component';
 import { ActivarComponent } from './components/activar/activar.component';
 // import { NavbarComponent } from '/components/navbar/NavbarComponent';
+import { CollagesComponent } from './components/collages/collages.component';
 
 
 
@@ -55,8 +57,8 @@ const routes: Routes = [
   // 12. ruta scapes
   { path: 'scapes', title: 'Scapes', component: ScapesComponent, pathMatch: "full" },
 
-  // { path: 'collages', title: 'Collages', component: CollagesComponent, pathMatch: "full" },
-  
+  { path: 'collages', title: 'Collages', component: CollagesComponent, pathMatch: "full" },
+
   // 13. ruta activar
   { path: "activar/:correo/:codigo", component: ActivarComponent, pathMatch: "full" },
 

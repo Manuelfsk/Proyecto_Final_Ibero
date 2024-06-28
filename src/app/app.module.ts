@@ -1,3 +1,4 @@
+
 //por qué me sale este archivo?
 
 
@@ -21,6 +22,8 @@ import { PhotographyComponent } from './components/photography/photography.compo
 import { ScapesComponent } from './components/scapes/scapes.component';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { CollagesComponent } from './components/collages/collages.component';
+
 
 
 
@@ -53,8 +56,12 @@ import { InterceptorService } from './servicios/interceptor.service';
     UsuariosComponent,
     PhotographyComponent,
     ScapesComponent,
-    ActivarComponent
-  
+    ActivarComponent,
+    CollagesComponent,
+
+
+
+
   ],
 
   imports: [
