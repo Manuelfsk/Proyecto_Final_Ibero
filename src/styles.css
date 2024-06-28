@@ -5,7 +5,7 @@
 
 } */
 
-/* #footer {
+#footer {
   background: #353535;
   padding: 10%;
   color: #c3c3c3;
@@ -77,64 +77,6 @@
 } */
 /* --------------------------------- */
 
-<<<<<<< HEAD
-=======
-.ventana {
-  background-color: #575452;
-  height: 45px;
-  border-radius: 0px 0px 10px 10px;
-  position: absolute;
-  margin-left: 240px;
-  width: calc(100% - 240px);
-  font-size: 25px;
-  font-style: italic;
-  color: white;
-}
-
-
-.btnadd{
-  background-color:#8bc34a ;
-  width: 39px;
-  text-align: center;
-  color: white;
-  border-radius: 50%;
-  font-size: 23px;
-  font-weight: 700;
-  margin: 4px;
-  position: absolute;
-  cursor: pointer;
-  top: 25px;
-  right: 8px;
-
-}
-.datos {
-  margin-top: 37px;
-}
-
-
- img.imgprod{
-  vertical-align: middle;
-    width: 45px;
-    margin-right: px;
-    padding: 2px;
-}
-
-.productos {
-  padding-left: 10px;
-}
-
-.imgprod {
-  width: 50px;
-  margin-top: 8px;
-  margin-left: calc(100% - 50px);
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-
-
-
->>>>>>> e99df6b6209925df42860399c588653ba9d1c7c6
 
 
 #testing {

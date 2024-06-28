@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PeticionService } from 'src/app/servicios/peticion.service';
 
 declare var $: any
+declare var Swal: any
 
 @Component({
   selector: 'app-activar',
@@ -11,7 +12,7 @@ declare var $: any
 })
 export class ActivarComponent implements OnInit {
 
-  constructor(private  peticion: PeticionService, private actroute: ActivatedRoute) { }
+  constructor(private  peticion: PeticionService, private actroute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.email = this.actroute.snapshot.params["correo"]
@@ -30,14 +31,28 @@ export class ActivarComponent implements OnInit {
       path: "/usuarios/activar",
       payload: {
         email: this.email,
-        codigo: this.codigo
+        codigoact: this.codigo
 
       }
     }
     this.peticion.Post(post.Host + post.path, post.payload).then(
       (res: any) => {
         console.log(res)
-        // $('#modalnuevo').modal('show')
+        if (res.state == true) {
+          Swal.fire({
+            icon: "success",
+            title: "Bienvenido a Altschmerz Ilustration",
+            text: res.mensaje,
+          });
+          // acceso a la zona privada
+          this.router.navigate(["/login"])
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Ouch!!!!",
+            text: res.mensaje,
+          });
+        }
       }
     )
   }
