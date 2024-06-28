@@ -1,15 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-/* body {
 
-  background: linear-gradient(180deg, rgba(187, 187, 185, 0.4) 0%, rgba(223, 220, 230, 0.3) 49%, rgba(214, 214, 214, 0.2) 100%);
 
-} */
 
+<<<<<<< HEAD
 #footer {
   background: #353535;
   padding: 10%;
   color: #c3c3c3;
 }
+=======
+>>>>>>> b108ef31c3a78530bbcfc95b187ab1c821a2d261
 
 .ajustenav {
   margin-top: -5px;
@@ -42,6 +41,7 @@
 .imgvent {
   width: 40px;
   cursor: pointer;
+<<<<<<< HEAD
 } */
 
 /* NAVBAR */
@@ -76,6 +76,11 @@
   font-weight: 300;
 } */
 /* --------------------------------- */
+=======
+}
+
+
+>>>>>>> b108ef31c3a78530bbcfc95b187ab1c821a2d261
 
 
 
