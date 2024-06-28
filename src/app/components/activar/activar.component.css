@@ -1,0 +1,21 @@
+#activarCuenta {
+    background: #353535;
+    color:white;
+    width: 363px;
+    border: solid 1px;
+    border-radius: 4%;
+    padding: 10px;
+    margin-left: calc(50% - 180px);
+}
+.texBienvenido {
+    margin: 15px 0px 35px 0px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+.actCuenta {
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: larger;
+    font-weight: 700;
+}

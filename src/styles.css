@@ -1,6 +1,11 @@
 
 
 
+#footer {
+  background: #353535;
+  padding: 10%;
+  color: #c3c3c3;
+}
 
 .ajustenav {
   margin-top: -5px;
@@ -33,9 +38,40 @@
 .imgvent {
   width: 40px;
   cursor: pointer;
+} */
+
+/* NAVBAR */
+
+/* FOOTER */
+/* div#footer {
+  background: #353535;
+  padding: 10%;
+  color: #c3c3c3;
+
 }
 
+.menu-footer li:hover {
+  color:#3a6fda;
+  font-weight: 500;
+}
 
+.row.caja-footer {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -80px;
+  margin-bottom: 55px;
+}
+
+.copyright-text a:hover {
+  color:rgb(78, 241, 201);
+}
+.copyright-text {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+} */
+/* --------------------------------- */
 
 
 
