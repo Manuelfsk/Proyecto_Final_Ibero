@@ -3,7 +3,7 @@
 <div id="superior"></div>
 <div class="menuDash">
     <div>
-        <div ><img class="imgdash" src="../../../assets/portrait_3917576.png" alt="imagen trabajador" ></div>
+        <div ><img class="imgdash" src="assets/portrait_3917576.png" alt="imagen trabajador" ></div>
         <div class="nombre">{{nombre}}</div>
         <div>
             <div class="rol" *ngIf="rol == '1'">Administrador</div>
@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="item ">
-        <div class="itemmenu border-bottom" routerLink=""> <img class="imgperf "src="../../../assets/profile_162855.png" alt="ajuste perfil">Perfil</div>
+        <div class="itemmenu border-bottom" routerLink="/perfil"> <img class="imgperf "src="assets/profile_162855.png">Perfil</div>
         <div class="itemmenu border-bottom" routerLink="/usuarios" *ngIf="rol == '1'"> <img class="imgperf "src="../../../assets/people_8364996.png"> Usuarios</div>
         <div class="itemmenu border-bottom" routerLink="/categorias" *ngIf="rol == '1'"> <img class="imgperf "src="../../../assets/catcat (2).png"> Categorias</div>
         <div class="itemmenu border-bottom" routerLink="/productos" *ngIf="rol == '1'"> <img class="imgperf "src="../../../assets/prodprod.png"> Productos</div>
