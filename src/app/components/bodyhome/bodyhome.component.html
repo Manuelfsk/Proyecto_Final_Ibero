@@ -1,13 +1,39 @@
 <app-navbar></app-navbar>
 
 <!-- CARRUSEL -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active data-bs-ride="carousel data-interval="2500">
+      <img src="../../../assets/img-carrusel1/azure dreams.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item"  data-interval="1500">
+      <img src="../../../assets/img-carrusel1/collapse.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="1500">
+      <img src="../../../assets/img-carrusel1/lebensmude.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-interval="2000">
+      <img src="../../../assets/img-carrusel1/lufschloss.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+
+<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
   </ol>
 
   <div class="carousel-inner">
@@ -33,7 +59,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </button>
-</div>
+</div> -->
 
 
 
@@ -44,17 +70,17 @@
 
     <div id="primerasimagenes">
       <div class="row">
-        <img src="../../../assets/bodyhome/1.jpeg" class="col-12 col-sm-12 col-md-3 primerasimagenes" alt="Reflejo">
+        <img src="../../../assets/bodyhome/estatuaaaas.jpg" class="col-12 col-sm-12 col-md-3 primerasimagenes" alt="Reflejo">
         <div id="aboutUsContainer" class="col-9 col-sm-12 col-md-6">
 
-        <h1 class="aboutUs">SOBRE NOSOTROS</h1>
+        <h1 class="aboutUs">ABOUT US</h1>
 
-          <p class="descripcion">Agencia de creación y difusión de conceptos visuales y artisticos,
-            ventana a un mundo de expresión donde cada obra cuenta una historia única. La idea principal proviene de la
-            necesidad de mostrarle al mundo artistas diferentes con multiples puntos de vista y estilos creativos,
-            de dar una imagen y conceptualizar los diferentes escenarios, imaginarios e ideas de otros artistas.
-            Nos especializamos en la creación de ilustraciones, fotografía, collages y arte para portadas
-            de álbumes de agrupaciones de diferentes generos musicales, libros, revistas y obras de arte bajo encargo.
+          <p class="descripcion">Agency for the creation and dissemination of visual and artistic concepts,
+            window to a world of expression where each work tells a unique story. The main idea comes from
+            need to show the world different artists with multiple points of view and creative styles,
+            to give an image and conceptualize the different scenarios, imaginaries and ideas of other artists.
+            We specialize in creating illustrations, photography, collages and cover art
+            of albums by groups of different musical genres, books, magazines and commissioned works of art.
           </p>
         </div>
 
@@ -70,33 +96,38 @@
 </section>
 
 <!-- TARJETAS SOBRE NUESTROS SERVICIOS -->
-<h1 class="servicios">NUESTROS SERVICIOS</h1>
+<h1 class="servicios">OUR SERVICES</h1>
 <div class="contenedor-card">
   <div class="card">
     <h2 class="card-title">Ilustration</h2>
-    <p class="card-text">Trabajamos en estrecha colaboración con los clientes para capturar su visión
-      y crear ilustraciones que superen sus expectativas. <br> Utilizamos una variedad de técnicas y estilos,
-       desde el dibujo tradicional hasta la ilustración digital.</p>
+    <p class="card-text">We work closely with clients to capture their vision
+      and create illustrations that exceed your expectations. <br> We use a variety of techniques and styles,
+      from traditional drawing to digital illustration.</p>
+      <button class="botoncito">Show more</button>
   </div>
 
   <div class="card">
     <h2 class="card-title">Desing</h2>
-    <p class="card-text">Utilizamos nuestra experiencia y creatividad para desarrollar soluciones de diseño innovadoras
-      y personalizadas que ayuden a que tus proyectos tengan una marca unica.</p>
+    <p class="card-text">We use our experience and creativity to develop innovative design solutions
+      and personalized that help your projects have a unique brand.</p>
+      <button class="botoncito">Show more</button>
   </div>
 
   <div class="card">
     <h2 class="card-title">Photography</h2>
-    <p class="card-text"> Nuestro equipo profesional comprendera sus necesidades y deseos para crear fotografías
-      que superen sus expectativas. Contamos con profesionales y técnicas para capturar imágenes de alta calidad
-      que sean a la vez hermosas y duraderas.</p>
+    <p class="card-text"> Our professional team will understand your needs and desires to create photographs
+      that exceed your expectations. We have professionals and techniques to capture high quality images
+      that are both beautiful and durable.</p>
+      <button class="botoncito">Show more</button>
   </div>
 
   <div class="card">
     <h2 class="card-title">Cover Layout</h2>
-    <p class="card-text">¿Eres un autor o editor que busca un servicio de maquetación y diagramación profesional
-      para tu libro o revista? Tenemos diagramadores experimentados con pasión por crear publicaciones hermosas y funcionales.</p>
-  </div>
+    <p class="card-text">Are you an author or editor looking for a professional layout and design service,
+      for your book or magazine? We have experienced layout designers with a passion for creating beautiful and functional publications.</p>
+      <button class="botoncito">Show more</button>
+    </div>
+
 </div>
 
 
