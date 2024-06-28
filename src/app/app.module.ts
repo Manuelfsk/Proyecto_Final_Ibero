@@ -35,6 +35,7 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { ActivarComponent } from './components/activar/activar.component';
 import { InterceptorService } from './servicios/interceptor.service';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { InterceptorService } from './servicios/interceptor.service';
     ScapesComponent,
     ActivarComponent,
     CollagesComponent,
+    PerfilComponent,
 
 
 

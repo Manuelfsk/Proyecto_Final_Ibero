@@ -18,6 +18,7 @@ import { ScapesComponent } from './components/scapes/scapes.component';
 import { ActivarComponent } from './components/activar/activar.component';
 // import { NavbarComponent } from '/components/navbar/NavbarComponent';
 import { CollagesComponent } from './components/collages/collages.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 
 
@@ -61,7 +62,8 @@ const routes: Routes = [
 
   // 13. ruta activar
   { path: "activar/:correo/:codigo", component: ActivarComponent, pathMatch: "full" },
-
+  //14  ruta perfil para usuarios
+  { path: "perfil", component: PerfilComponent, pathMatch: "full" },
 
 ];
 
