@@ -131,7 +131,6 @@ a[_ngcontent-ng-c541629009] {
 /* CARD */
 *{
   margin: 0px;
-  /* padding: 5px; */
   box-sizing: border-box;
 }
 
@@ -142,10 +141,6 @@ a[_ngcontent-ng-c541629009] {
   margin-top: 70px;
 }
 
-
-
-
-
 .card{
   width: 325px;
   background-color: #f0f0f0;
@@ -155,8 +150,6 @@ a[_ngcontent-ng-c541629009] {
   margin: 20px;
 }
 
-
-
 .card-content{
   padding: 16px;
 }
@@ -164,7 +157,6 @@ a[_ngcontent-ng-c541629009] {
 img.my-3 {
   padding: 10px;
 }
-
 
 .card-content h3{
   font-size: 28px;
@@ -193,10 +185,13 @@ p.textoprecio {
 
 }
 
-
 .card-content .btn:hover {
   background-color: #001124;
 }
+
+
+
+
 
 
 /* EXPERIMENTO HOVER */
