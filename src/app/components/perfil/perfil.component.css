@@ -1,0 +1,12 @@
+.marPerfil {
+    border: solid 1px;
+    margin: 0px 10px 0px 10px;
+    color: black;
+    padding: 0px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+.texMisDatos {
+    text-align: center;
+    padding-bottom: 12px;
+}
