@@ -2,62 +2,53 @@
 
 <div class="ventana">
     <div class="titulo">Perfil del usuario</div>
-    <div><img class="imgprod" src="../../../assets/plus-sign-button_17340.png"></div>
     
-
-
 <div class="marPerfil" >
     <div class="texMisDatos" >Mis Datos</div>
     <div class="needs-validation" novalidate>
         <div class="form-row">
             <div class="col-md-6 mb-3">
-                <label for="validationCustom01">Nombres</label>
-                <input type="text" class="form-control" id="validationCustom01" required [(ngModel)]="nombre">
+                <label for="nombre">Nombres</label>
+                <input type="text" class="form-control" id="nombre" required [(ngModel)]="nombre">
                 <div class="valid-feedback">
-                    Looks good!
                 </div>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Apellidos</label>
-                <input type="text" class="form-control" id="validationCustom02" required [(ngModel)]="apellidos">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" required [(ngModel)]="apellidos">
                 <div class="valid-feedback">
-                    Looks good!
                 </div>
             </div>
         </div>
         <div class="form-row">
             <div class="col-md-6 mb-3">
-                <label for="validationCustom01">Correo Electronico</label>
-                <input type="text" class="form-control" id="validationCustom01"  disabled="true" [(ngModel)]="email">
+                <label for="email">Correo Electronico</label>
+                <input type="text" class="form-control" id="email"  disabled="true" [(ngModel)]="email">
                 <div class="valid-feedback">
-                    Looks good!
                 </div>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Telefono</label>
-                <input type="text" class="form-control" id="validationCustom02"  required [(ngModel)]="telefono">
+                <label for="telefono">Telefono</label>
+                <input type="text" class="form-control" id="telefono"  required [(ngModel)]="telefono">
                 <div class="valid-feedback">
-                    Looks good!
                 </div>
             </div>
         </div>
         <div class="form-row">
             <div class="col-md-6 mb-3">
-                <label for="validationCustom01">Password</label>
-                <input type="text" class="form-control" id="validationCustom01"  required [(ngModel)]="password">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password"  required [(ngModel)]="password">
                 <div class="valid-feedback">
-                    Looks good!
                 </div>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Nuevo Password</label>
-                <input type="text" class="form-control" id="validationCustom02"  required [(ngModel)]="nuevo_password">
+                <label for="confirmarpass">Confirmar Password</label>
+                <input type="password" class="form-control" id="confirmarpass"  required [(ngModel)]="confirmarpass">
                 <div class="valid-feedback">
-                    Looks good!
                 </div>
             </div>
         </div>
-        <button class="btn btn-primary" type="submit">Actualizar</button>
+        <button class="btn btn-primary" type="button" (click)="ActualizarPass()">Actualizar</button>
     </div>
 
 </div>
