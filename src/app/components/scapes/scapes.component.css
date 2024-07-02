@@ -226,3 +226,72 @@ p.site-description.slogan.site-tagline {
 
   background-color: #5d5955;
 }
+
+
+/* ----------------------- */
+
+
+
+/* Estilos generales */
+.section {
+  background-image: url("../../../assets/scapes/Mockup.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2%;
+  padding-bottom: 40%;
+  padding-top: 20%;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 90%; /* Ajuste para mejor responsividad */
+  margin: 0 auto;
+  padding: 0 20px; /* Ajuste para mejor espacio interior en dispositivos pequeños */
+}
+
+.section-title {
+  
+  font-size: 3.7em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.section-text {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.4em;
+  font-family: serif;
+  color: #555;
+}
+
+/* Estilos para la sección de texto adicional */
+.text-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.text-container {
+  max-width: 90%; /* Ajuste para mejor responsividad */
+  margin: 0 auto;
+  padding: 0 20px; /* Ajuste para mejor espacio interior en dispositivos pequeños */
+}
+
+.text-title {
+  font-size: 3em; /* Ajuste del tamaño de fuente */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-content {
+  font-size: 1.1em; /* Ajuste del tamaño de fuente */
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+
+
+

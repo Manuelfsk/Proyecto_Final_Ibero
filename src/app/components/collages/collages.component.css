@@ -262,3 +262,253 @@ p.site-description.slogan.site-tagline {
 }
 
 /* EXPERIMETNO HOVER */
+
+
+/* ----------------------------------------------------- */
+
+
+/* Estilos para la sección de collages */
+.collages-section {
+  padding: 3em 0;
+  background-color: #fff; /* Ajusta el color de fondo según tu preferencia */
+}
+
+.collages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collage-item {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.collage-item:hover {
+  transform: scale(1.05);
+}
+
+.collage-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.collage-item:hover .collage-img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.collage-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: opacity 0.3s ease;
+}
+
+.collage-item:hover .collage-caption {
+  opacity: 1;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .collages-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collage-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .collage-item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .collage-item {
+    width: 30%;
+  }
+}
+
+
+/* ------------------------------------------------------------- */
+
+/* Estilos para el cuadro de texto emergente */
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .collages-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collage-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .collage-item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .collage-item {
+    width: 30%;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.content {
+  flex: 1;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3.7em;
+  margin-bottom: 0.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 1.4em;
+  font-family: serif;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.section-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content,
+  .image-container {
+    text-align: center;
+    padding: 0;
+  }
+
+  .section-title {
+    font-size: 1.8em;
+  }
+
+  .section-text {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+/* ------------------------------------------------------------- */
+
+/* seccion 2 */
+
+/* Estilos para la sección */
+.section2 {
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 50px 0; /* Espaciado interno */
+  margin-top: 40px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 0 20px; /* Espaciado interno horizontal */
+}
+
+/* Estilos para las columnas de texto */
+.column {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding: 0 20px; /* Espaciado interno horizontal */
+  text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para la imagen centrada */
+.image-container-center {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  text-align: center; /* Alineación del contenido */
+  margin: 35px 0; /* Margen exterior */
+}
+
+.section-image-center {
+  max-width: 100%; /* Imagen ocupa el 100% del ancho disponible */
+  height: auto; /* Altura automática */
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+
+  .container {
+    flex-direction: column; /* Cambia a dirección de columna */
+    text-align: center; /* Alineación centrada */
+  }
+
+  .column,
+  .image-container-center {
+    padding: 10px; /* Reducción de espaciado interno */
+  }
+
+  .section-image-center {
+    max-width: 80%; /* Reduce el ancho de la imagen */
+  }
+}
+

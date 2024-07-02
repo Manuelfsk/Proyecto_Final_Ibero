@@ -43,4 +43,215 @@
 .img-fluid{
   max-width: 105%;
   max-height: 130%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.img-fluid:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*
+---------------------------------------------------------- */
+/* .portfolio {
+  padding: 2em 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.portfolio-title {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.portfolio-description {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  color: #555;
+}
+
+.portfolio-image {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+} */
+/* ----------------------------------------------- */
+
+
+/* ---------------------------------------------------- */
+/* .portfolio {
+  padding: 2em 0;
+  background-color: #f9f9f9;
+}
+
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+
+.portfolio-text {
+  flex: 1;
+  max-width: 60%;
+  margin-right: 20px;
+}
+
+.portfolio-title {
+  font-size: 3.7em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.portfolio-description {
+  font-size: 1.4em;
+  font-family: serif;
+  color: #555;
+}
+
+.portfolio-image {
+  flex: 1;
+  max-width: 35%;
+}
+
+.portfolio-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+} */
+
+/* ------------------------------------------------ */
+
+
+.portfolio {
+  padding: 2em 0;
+  background-color: #f9f9f9;
+}
+
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+
+.portfolio-text {
+  flex: 1;
+  max-width: 60%;
+  margin-right: 20px;
+}
+
+.portfolio-title {
+  font-size: 3.7em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.portfolio-description {
+  font-size: 1.4em;
+  font-family: serif;
+  color: #555;
+}
+
+.portfolio-image {
+  flex: 1;
+  max-width: 35%;
+}
+
+.portfolio-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  #portfolio-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-image {
+    max-width: 80%;
+
+  }
+}
+
+/* --------------------------------------- */
+
+/* Estilos para la sección de imágenes superpuestas */
+.superimposed-images {
+  padding: 3em 0;
+  background-color: #f4f4f4; /* Puedes ajustar el color de fondo según tu preferencia */
+  text-align: center;
+  
+}
+
+.superimposed-images .section-title {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-family: serif;
+  color: #333;
+}
+
+.images-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-wrapper .image {
+  max-width: 30%;
+  height: auto;
+  margin: 0 1%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images-wrapper .image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .images-wrapper {
+    flex-direction: column;
+  }
+
+  .images-wrapper .image {
+    max-width: 80%;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .images-wrapper .image {
+    max-width: 45%;
+  }
+}
+
