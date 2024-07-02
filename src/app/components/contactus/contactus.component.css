@@ -1,4 +1,10 @@
-div#miregistro {
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+} */
+/* div#miregistro {
+
   background: #353535;
   width: 363px;
   margin-left: calc(50% - 180px);
@@ -6,46 +12,14 @@ div#miregistro {
   border-radius: 15px;
   margin-top: 20px;
   color: white;
-  justify-content: center;
+  justify-content:left;
   margin-bottom: 10px;
 }
 
-div#misenlaces a {
-  color: whitesmoke;
-}
-a {
-  color: whitesmoke;
-}
-/* .navbar{
-  display: flex;
-  justify-content:center;
-
-} */
-.navbar{
-  display: flex;
-  justify-content:center;
-  top: 5px;
-  padding: 40px;
-}
-.navbar-collapse {
-  flex-basis: 0;
-  flex-grow: 0;
-
-}
 
 
-.navbar-light .navbar-nav .active>.nav-link{
-  color: #c3c3c3;
-  font-size: 23px;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: #c3c3c3;
-  font-size: 23px;
-}
 
-label {
-  font-style: italic;
-}
+
 
 @media (width <= 980px){
   .navbar-collapse {
@@ -65,63 +39,17 @@ button.btn.btn-light {
 margin-top: 15px;}
 
 .btn:hover {
-  background-color: #afb0b1;
-}
-
-input#comprador {
-margin-left: 20px;
-}
-
-form {
-  margin-top: 15px;
-}
+  background-color: #007af5;
+  color: white;
+} */
 
 
-/* mascss */
-
-h1 {
-  text-align: center;
-  /* margin: 20px 20px 10px; */
-  font-family: ui-monospace;
-  font-size: 50px;
-  /* margin-bottom: -16px; */
-  letter-spacing: 5px;
-  padding-top: 66px;
-  color: rgb(226, 223, 223);
-}
+/* ------------------------------- */
 
 
 
-div#descripcion {
-  font-size: 20px;
-  text-align: start;
-}
+/* ------------------------------ */
 
-p.descripcion {
-  font-size: 20px;
-  font-family: serif;
-  text-align: justify;
-  color: rgb(199, 199, 199);
-  padding-top: 5%;
-  /* margin-top: 20px; */
-}
-
-p.site-description.slogan.site-tagline {
-  color: rgb(207, 207, 207);
-  text-align: center;
-  /* margin: 10px;
-  margin-bottom: 10px; */
-  letter-spacing: 5px;
-}
-
-.imagenfondo {
-  background-image: url(../../../assets/img-navbar/bannerfijo.png);
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
 
 
 /* EXPERIMENTO HOVER */
@@ -155,3 +83,111 @@ p.site-description.slogan.site-tagline {
 }
 
 /* EXPERIMETNO HOVER */
+
+
+/* --------------------------------------- */
+
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #b1b1b1, #ffd4b3); /* Fondo con degradado */
+  color: #575757;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around; /* Espacio alrededor de los elementos */
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo del formulario y sección */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.form-container {
+  width: 80%;
+  padding: 20px;
+}
+
+#miregistro {
+  width: 360px;
+  border-radius: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: lighter;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #525151; /* Color de borde al enfocar */
+}
+
+.btn {
+  display: inline-block;
+  background-color: #707070;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2ab7ee; /* Color de fondo al pasar el mouse */
+}
+
+.section {
+  width: 50%;
+  padding: 50px;
+}
+
+.section-title {
+  font-family: serif;
+  font-size: 3.9em;
+  margin-bottom: 0.5em;
+  color: #333;
+
+
+}
+
+.section-text {
+  font-size: 1.8em;
+  font-family: serif;
+  color: #555;
+  line-height: 1.5;
+}
