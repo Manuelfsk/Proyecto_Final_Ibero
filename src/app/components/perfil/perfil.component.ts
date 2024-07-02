@@ -80,6 +80,38 @@ export class PerfilComponent implements OnInit {
     }
   }
 
+ActualizarDatos(){
+  let post = {
+    Host: this.peticion.urlhost,
+    path: "/usuarios/actualizarDatos",
+    payload: {
+      // _id: this.Idseleccionado,
+      // nombre: this.nombre,
+      telefono: this.telefono
+    }
 
+  }
+  this.peticion.Post(post.Host + post.path, post.payload).then(
+    (res: any) => {
+      console.log(res)
+      if (res.state == true) {
+        
+        this.Cargar()
+        Swal.fire({
+          icon: "success",
+          title: "Datos Actualizados Correctamente ",
+          text: res.mensaje,
+        });
+      }else{
+        Swal.fire({
+          icon: "error",
+          title: "Se presentó un problema al actualizar datos",
+          text: res.mensaje,
+        });
+      }
+
+    }
+  )
+}
 
 }

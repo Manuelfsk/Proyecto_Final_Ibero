@@ -12,3 +12,7 @@
     text-align: center;
     padding-bottom: 12px;
 }
+
+.aju_Boton {
+    margin-left: calc(50% - 100px);
+}
