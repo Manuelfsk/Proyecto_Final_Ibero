@@ -1,0 +1,18 @@
+.marPerfil {
+    border: solid 1px;
+    margin: 20px 10px 0px 10px;
+    color: white;
+    padding: 0px 15px 15px 15px;
+    border-radius: 25px;
+    background-color: black;
+
+}
+
+.texMisDatos {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.aju_Boton {
+    margin-left: calc(50% - 100px);
+}
