@@ -1,149 +1,139 @@
-
-
-div#milogin {
-  background: #353535;
-  width: 363px;
-  margin-left: calc(50% - 180px);
-  padding: 15px;
-  border-radius: 15px;
-  margin-top: 20px;
-  color: white;
-  justify-content: center;
-  margin-bottom: 10px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-div#misenlaces a {
-  color: whitesmoke;
-}
-a {
-  color: whitesmoke;
-}
-.navbar{
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #b1b1b1, #ffd4b3);
+  color: #575757;
   display: flex;
-  justify-content:center;
-
-}
-.navbar-collapse {
-  flex-basis: 0;
-  flex-grow: 0;
-
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Para asegurar que el contenido se centre verticalmente */
 }
 
-
-.navbar-light .navbar-nav .active>.nav-link{
-  color: #c3c3c3;
-  font-size: 23px;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: #c3c3c3;
-  font-size: 23px;
-}
-
-label {
-  font-style: italic;
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas en pantallas pequeñas */
+  justify-content: space-around;
+  width: 90%;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (width <= 980px){
-  .navbar-collapse {
-      flex-basis: 100%;
-      flex-grow: 1;
-
-  }
-
-}
-
-@media (width <= 395px) {
-  div#milogin {
-      width: auto;
-  }
-}
-button.btn.btn-light {
-margin-top: 15px;}
-
-input#comprador {
-margin-left: 20px;
-}
-
-form {
-  margin-top: 15px;
-}
-
-
-/* mascss */
-
-h1 {
-  text-align: center;
-  /* margin: 20px 20px 10px; */
-  font-family: ui-monospace;
-  font-size: 50px;
-  /* margin-bottom: -16px; */
-  letter-spacing: 5px;
-  padding-top: 66px;
-  color: rgb(226, 223, 223);
-}
-
-
-
-div#descripcion {
-  font-size: 20px;
-  text-align: start;
-}
-
-p.descripcion {
-  font-size: 20px;
-  font-family: serif;
-  text-align: justify;
-  color: rgb(199, 199, 199);
-  padding-top: 5%;
-  /* margin-top: 20px; */
-}
-
-p.site-description.slogan.site-tagline {
-  color: rgb(207, 207, 207);
-  text-align: center;
-  /* margin: 10px;
-  margin-bottom: 10px; */
-  letter-spacing: 5px;
-}
-
-.imagenfondo {
-  background-image: url(../../../assets/img-navbar/bannerfijo.png);
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-
-
-/* EXPERIMENTO HOVER */
-
-.navbar-nav a {
-  position: relative;
-  display: block;
-  padding: 5px;
-}
-
-.navbar-nav a::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.form-container {
   width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, #ffffff, #ffffff, #ebe7e7);
-  z-index: 1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
+  max-width: 400px; /* Limita el ancho del formulario en pantallas grandes */
+  padding: 20px;
 }
 
-.navbar-nav a:hover::before {
-  transform: scaleX(1);
+
+#milogin{
+  width: 100%; /* Hace que el formulario ocupe todo el ancho del contenedor */
+  max-width: 360px;
+  border-radius: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: lighter;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav[data-animation="center"] a::before {
-  transform-origin: center;
+.form-group {
+  margin-bottom: 15px;
 }
 
-/* EXPERIMETNO HOVER */
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+.form-control:focus {
+  outline: none;
+  border-color: #525151;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #707070;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2ab7ee;
+}
+
+.section {
+  width: 100%; /* Hace que la sección ocupe todo el ancho del contenedor en pantallas pequeñas */
+  max-width: 500px; /* Limita el ancho de la sección en pantallas grandes */
+  padding: 50px;
+  text-align: center; /* Centra el texto en pantallas pequeñas */
+}
+
+.section-title {
+  font-family: serif;
+  font-size: 2em; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.section-text {
+  font-size: 1em; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+  font-family: serif;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (min-width: 768px) {
+  .container {
+    flex-wrap: nowrap; /* Impide que los elementos se ajusten en múltiples líneas en pantallas medianas */
+  }
+
+  .form-container,
+  .section {
+    width: 45%; /* Hace que el formulario y la sección ocupen menos espacio en pantallas medianas */
+  }
+
+  .section-title {
+    font-size: 2.5em; /* Ajusta el tamaño de la fuente en pantallas medianas */
+  }
+
+  .section-text {
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente en pantallas medianas */
+  }
+}
+
+@media (min-width: 992px) {
+  .form-container,
+  .section {
+    width: 40%; /* Hace que el formulario y la sección ocupen menos espacio en pantallas grandes */
+  }
+
+  .section-title {
+    font-size: 3em; /* Ajusta el tamaño de la fuente en pantallas grandes */
+  }
+
+  .section-text {
+    font-size: 1.4em; /* Ajusta el tamaño de la fuente en pantallas grandes */
+  }
+}
