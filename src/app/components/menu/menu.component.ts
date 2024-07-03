@@ -16,11 +16,12 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.CargarEstado()
   }
-
+//agregar campos
   nombre: string = "cargando nombre..."
   rol: string = "cargando rol..."
   email: string = ""
   password: string = ""
+  _id: string = "default"
 
   CerrarSession() {
     let post = {
@@ -60,6 +61,7 @@ this.peticion.Post(post.Host + post.path, post.payload).then(
       }
       this.nombre = res.nombre
       this.rol = res.rol
+      this._id = res._id
       console.log(this.nombre)
         console.log(this.rol)
     })

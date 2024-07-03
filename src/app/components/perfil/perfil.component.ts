@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, Host, OnInit } from '@angular/core';
 import { PeticionService } from 'src/app/servicios/peticion.service';
 
 declare var Swal: any
@@ -10,16 +11,23 @@ declare var Swal: any
 })
 export class PerfilComponent implements OnInit {
 
-  constructor(private peticion: PeticionService) { }
+  constructor(private peticion: PeticionService, private http: HttpClient) { }
   ngOnInit(): void {
     this.Cargar()
   }
+  //creacion de campos
   nombre: string = ""
   apellidos: string = ""
   email: string = ""
   password: string = ""
   telefono: number = 0
   confirmarpass: string = ""
+  selectfile: any = {
+    name: ""
+  }
+
+
+
 
   Cargar() {
     let post = {
@@ -80,38 +88,71 @@ export class PerfilComponent implements OnInit {
     }
   }
 
-ActualizarDatos(){
-  let post = {
-    Host: this.peticion.urlhost,
-    path: "/usuarios/actualizarDatos",
-    payload: {
-      // _id: this.Idseleccionado,
-      // nombre: this.nombre,
-      telefono: this.telefono
-    }
-
-  }
-  this.peticion.Post(post.Host + post.path, post.payload).then(
-    (res: any) => {
-      console.log(res)
-      if (res.state == true) {
-        
-        this.Cargar()
-        Swal.fire({
-          icon: "success",
-          title: "Datos Actualizados Correctamente ",
-          text: res.mensaje,
-        });
-      }else{
-        Swal.fire({
-          icon: "error",
-          title: "Se presentó un problema al actualizar datos",
-          text: res.mensaje,
-        });
+  ActualizarDatos() {
+    let post = {
+      Host: this.peticion.urlhost,
+      path: "/usuarios/actualizarDatos",
+      payload: {
+        // _id: this.Idseleccionado,
+        // nombre: this.nombre,
+        telefono: this.telefono
       }
 
     }
-  )
+    this.peticion.Post(post.Host + post.path, post.payload).then(
+      (res: any) => {
+        console.log(res)
+        if (res.state == true) {
+
+          this.Cargar()
+          Swal.fire({
+            icon: "success",
+            title: "Datos Actualizados Correctamente ",
+            text: res.mensaje,
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Se presentó un problema al actualizar datos",
+            text: res.mensaje,
+          });
+        }
+
+      }
+    )
+  }
+  ArchivoSeleccionado(event: any) {
+    console.log(event)
+    this.selectfile = event.target.files[0]
+    console.log(this.selectfile)
+
+
+
+  }
+  UploadImg() {
+    const formData = new FormData
+    formData.append('image', this.selectfile,this.selectfile.name)
+
+    let post = {
+      Host: this.peticion.urlhost,
+      path: "/CargarImagen"
+    }
+
+    this.http.post(post.Host + post.path, formData).subscribe((res) => {
+      console.log(res)
+
+    }, (error) => {
+      console.log(error)
+    })
+
+  }
 }
 
-}
+
+
+
+
+
+
+
+

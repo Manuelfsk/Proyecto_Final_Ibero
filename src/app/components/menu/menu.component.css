@@ -17,20 +17,18 @@
 }
 
 #superior {
-
     background: rgb(0, 0, 0);
     height: 25px;
     border: solid 1px;
-
 }
 
 .imgdash {
     background: white;
     border-radius: 50%;
-    width: 75%;
+    width: 69%;
     padding: 1%;
     padding-bottom: 3px;
-    margin: 15px;
+    margin: 15px 0px 0px 37px;
 }
 
 .nombre {
