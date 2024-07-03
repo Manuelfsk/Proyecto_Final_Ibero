@@ -14,6 +14,7 @@ export class PerfilComponent implements OnInit {
   constructor(private peticion: PeticionService, private http: HttpClient) { }
   ngOnInit(): void {
     this.Cargar()
+
   }
   //creacion de campos
   nombre: string = ""
@@ -46,6 +47,7 @@ export class PerfilComponent implements OnInit {
           this.email = res.respuesta.data[0].email,
           this.password = res.respuesta.data[0].password,
           this.telefono = res.respuesta.data[0].telefono
+
       }
     )
   }
@@ -131,16 +133,28 @@ export class PerfilComponent implements OnInit {
   }
   UploadImg() {
     const formData = new FormData
-    formData.append('image', this.selectfile,this.selectfile.name)
+    formData.append('image', this.selectfile, this.selectfile.name)
 
     let post = {
       Host: this.peticion.urlhost,
       path: "/CargarImagen"
     }
 
-    this.http.post(post.Host + post.path, formData).subscribe((res) => {
+    this.http.post(post.Host + post.path, formData).subscribe((res: any) => {
       console.log(res)
-
+      if (res.state == true) {
+        Swal.fire({
+          icon: "success",
+          title: "perfecto",
+          text: res.mensaje,
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Hay un problema",
+          text: res.mensaje,
+        });
+      }
     }, (error) => {
       console.log(error)
     })
