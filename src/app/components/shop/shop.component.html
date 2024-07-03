@@ -20,7 +20,8 @@
 <div class="cardproductos">
 
   <div class="container ">
-    <div class=" row col col-sm-12 col-md-6 col-lg-4" *ngFor="let item of datos">
+    <ng-container *ngFor="let item of datos">
+    <div class=" row col col-sm-12 col-md-6 col-lg-4" *ngIf="item.estado == '1'">
       <div class=" card float-left overflow-hidden ">
         <img class=" border" src="{{item.imagen}}">
         <div class="card-content col-12 ">
@@ -31,6 +32,7 @@
         </div>
       </div>
     </div>
+  </ng-container>
   </div>
 </div>
 
