@@ -162,7 +162,7 @@ div#primerasimagenes {
   transform: scale(1.2);
  }
  .card .botoncito:hover{
-  background-color: #007bff;
+  background-color: #2ab7ee;
   color: white;
   border: white;
  }
