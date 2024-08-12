@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { PeticionService } from 'src/app/servicios/peticion.service';
+import { NotificacionesCarComponent } from '../notificaciones-car/notificaciones-car.component';
+// import de ngrx
+import { Store } from '@ngrx/store';
+import { agregarproductos } from 'src/app/ngrx/carritoAcciones';
+
+
+
 
 @Component({
   selector: 'app-shop',
@@ -7,11 +14,14 @@ import { PeticionService } from 'src/app/servicios/peticion.service';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit {
+   
   ngOnInit(): void {
     this.CargarTdoas()
   }
 
-  constructor(private peticion: PeticionService) { }
+  constructor(private peticion: PeticionService, private store: Store) { }
+
+  _id:string = ""
   imagen: string = ""
   nombre: string = ""
   precio: number = 0
@@ -34,4 +44,12 @@ export class ShopComponent implements OnInit {
       }
     )
   }
+
+agregaralcarrito(producto:ShopComponent){
+this.store.dispatch(agregarproductos({producto}))
+console.log(this.agregaralcarrito)
+// console.log(producto)
+}
+
+
 }

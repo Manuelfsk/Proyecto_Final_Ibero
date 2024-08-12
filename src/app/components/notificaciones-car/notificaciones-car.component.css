@@ -1,0 +1,19 @@
+.btnCompras{
+    position: fixed;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 311px;
+    cursor: pointer;
+}
+.numero{
+    background-color: #333333;
+    width: 20px;
+    height: 25px;
+    border-radius: 49%;
+    padding-left: 5px;
+    font-weight: 500;
+    margin-bottom: 27px;
+    color: white;
+}

@@ -19,6 +19,8 @@ import { ActivarComponent } from './components/activar/activar.component';
 // import { NavbarComponent } from '/components/navbar/NavbarComponent';
 import { CollagesComponent } from './components/collages/collages.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { CarritoVentasComponent } from './components/carrito-ventas/carrito-ventas.component';
+import { NotificacionesCarComponent } from './components/notificaciones-car/notificaciones-car.component';
 
 
 
@@ -64,7 +66,10 @@ const routes: Routes = [
   { path: "activar/:correo/:codigo", component: ActivarComponent, pathMatch: "full" },
   //14  ruta perfil para usuarios
   { path: "perfil", component: PerfilComponent, pathMatch: "full" },
-
+  //15  ruta carrito ventas
+  { path: "carritoVentas", component: CarritoVentasComponent, pathMatch: "full" },
+  //15  ruta notificaciones compras
+  { path: "notificacionescar", component: NotificacionesCarComponent, pathMatch: "full" },
 ];
 
 @NgModule({

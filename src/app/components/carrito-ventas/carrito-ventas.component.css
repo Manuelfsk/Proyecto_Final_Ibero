@@ -1,0 +1,50 @@
+h3.titulo.compras {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.border-img {
+    width: 200px;
+    margin: 10px 10px 10px 53px;
+    border-radius: 25px;
+}
+
+.margen-ngrx {
+    color: white;
+    border: solid 2px;
+    background-color: #333333;
+    width: 300px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 45px;
+}
+
+.nombreproducto {
+    margin: 0px 0px 5px 27px;
+    font-size: 18px;
+}
+
+.negrita {
+    position: absolute;
+    left: 302px;
+    cursor: pointer; 
+}
+
+.precioproducto {
+    text-align: center;
+    font-weight: 700;
+}
+
+.negritatotal {
+    margin: 0px 25px 0px 30px;
+    text-align: center;
+}
+
+.totalcompra {
+    font-weight: 700;
+    margin: 22px 0px 22px 3px
+}

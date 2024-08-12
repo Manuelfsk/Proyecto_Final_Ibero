@@ -16,7 +16,7 @@
   <button class="botoncitos"><a href="#">Scapes</a></button>
 
 </div>
-
+<app-notificaciones-car></app-notificaciones-car>
 <div class="cardproductos">
 
   <div class="container ">
@@ -26,9 +26,9 @@
         <img class=" border" src="{{item.imagen}}">
         <div class="card-content col-12 ">
           <h3>{{item.nombre}}</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. {{item._id}} </p>
           <p>{{item.precio | currency}}</p>
-          <a href="" class="btn">Comprar</a>
+          <button  class="btn"(click)="agregaralcarrito(item)" >Comprar</button>
         </div>
       </div>
     </div>

@@ -1,14 +1,8 @@
-
-//por qué me sale este archivo?
-
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 
-
-// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BodyhomeComponent } from './components/bodyhome/bodyhome.component';
@@ -24,9 +18,6 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CollagesComponent } from './components/collages/collages.component';
 
-
-
-
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
@@ -36,11 +27,14 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { ActivarComponent } from './components/activar/activar.component';
 import { InterceptorService } from './servicios/interceptor.service';
 import { PerfilComponent } from './components/perfil/perfil.component';
-
+import { CarritoVentasComponent } from './components/carrito-ventas/carrito-ventas.component';
+// ngrx
+import { provideState, provideStore } from '@ngrx/store';
+import { carritoReducer } from './ngrx/carrito.reducer';
+import { NotificacionesCarComponent } from './components/notificaciones-car/notificaciones-car.component';
 
 @NgModule({
   declarations: [
-
     AppComponent,
     NavbarComponent,
     BodyhomeComponent,
@@ -60,10 +54,8 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     ActivarComponent,
     CollagesComponent,
     PerfilComponent,
-
-
-
-
+    CarritoVentasComponent,
+    NotificacionesCarComponent,
   ],
 
   imports: [
@@ -73,11 +65,14 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     HttpClientModule,
   ],
 
-  providers: [{
-    provide:HTTP_INTERCEPTORS,
+  providers: [
+    {
+    provide: HTTP_INTERCEPTORS,
     useClass: InterceptorService,
-    multi:true
-  }],
+    multi: true,
+  },
+  provideStore(),
+  provideState({ name:'cartState', reducer: carritoReducer })],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
