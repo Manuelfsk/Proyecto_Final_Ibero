@@ -11,7 +11,8 @@ export class PeticionService {
 
   constructor(private http: HttpClient) { }
 
-  urlhost:string = "http://localhost:3000"
+  // urlhost:string = "http://localhost:3000"
+  urlhost:string = "http://18.218.88.92:3000"//url de domiio o local 8
 
   Post(url: string, data: {}) {
     let promise = new Promise((resolve, reject) => {
