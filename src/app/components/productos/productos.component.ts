@@ -36,7 +36,7 @@ export class ProductosComponent implements OnInit {
   AbrirModal() {
     console.log(this.estado)
     console.log(this.datosCategorias[0].cod_cat)
-    this.imagen = "http://localhost:3000/imagenes/default.png"
+    this.imagen = "http://18.218.88.92:3000/imagenes/default.png"
     this.cod_cat = this.datosCategorias[0].cod_cat
     this.cod_prod = ""
     this.nombre = ""
