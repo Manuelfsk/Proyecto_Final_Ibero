@@ -14,18 +14,20 @@ import { agregarproductos } from 'src/app/ngrx/carritoAcciones';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit {
-   
+
   ngOnInit(): void {
     this.CargarTdoas()
   }
 
   constructor(private peticion: PeticionService, private store: Store) { }
 
-  _id:string = ""
+  _id: string = ""
   imagen: string = ""
   nombre: string = ""
   precio: number = 0
   datos: any[] = []
+  datospormostrar: any[] = []
+
 
   CargarTdoas() {
     let post = {
@@ -40,16 +42,23 @@ export class ShopComponent implements OnInit {
       (res: any) => {
         console.log(res)
         this.datos = res.respuesta.data
-
+        this.datospormostrar = res.respuesta.data
       }
     )
   }
 
-agregaralcarrito(producto:ShopComponent){
-this.store.dispatch(agregarproductos({producto}))
-console.log(this.agregaralcarrito)
-// console.log(producto)
-}
+  agregaralcarrito(producto: ShopComponent) {
+    this.store.dispatch(agregarproductos({ producto }))
+    console.log(this.agregaralcarrito)
+    // console.log(producto)
+  }
+
+  fitrarcategoria(categoria:string){
+    const datosfitrados = this.datos.filter(foto=>{
+      return foto.cod_cat === categoria
+    })
+    this.datospormostrar = datosfitrados
+  }
 
 
 }

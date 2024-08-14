@@ -10,17 +10,17 @@
 
 
 <div class="botonesmenu">
-  <button class="botoncitos"><a href="#">Album Cover Art </a></button>
-  <button class="botoncitos"><a href="#">Collages</a></button>
-  <button class="botoncitos"><a href="#">Photography</a></button>
-  <button class="botoncitos"><a href="#">Scapes</a></button>
+  <button class="botoncitos" (click)="fitrarcategoria('1')">Album Cover Art </button>
+  <button class="botoncitos" (click)="fitrarcategoria('2')">Collages</button>
+  <button class="botoncitos" (click)="fitrarcategoria('3')">Photography</button>
+  <button class="botoncitos" (click)="fitrarcategoria('4')">Scapes</button>
 
 </div>
 <app-notificaciones-car></app-notificaciones-car>
 <div class="cardproductos">
 
   <div class="container ">
-    <ng-container *ngFor="let item of datos">
+    <ng-container *ngFor="let item of datospormostrar">
     <div class=" row col col-sm-12 col-md-6 col-lg-4" *ngIf="item.estado == '1'">
       <div class=" card float-left overflow-hidden ">
         <img class=" border" src="{{item.imagen}}">
