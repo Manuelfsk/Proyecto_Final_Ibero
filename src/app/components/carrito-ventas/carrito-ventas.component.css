@@ -87,7 +87,7 @@ h3.titulo.compras {
 @media (min-width: 1200px) {
     .negrita {
         position: absolute;
-        left: 765px;
+        left: 890px;
         cursor: pointer;
     }
 }
@@ -104,7 +104,7 @@ h3.titulo.compras {
 @media (min-width: 576px) {
 
     .nombreproducto {
-        margin: 0px 0px 5px 27px;
+        margin: 0px 0px 5px 42px;
         font-size: 18px;
     }
 }
@@ -112,7 +112,7 @@ h3.titulo.compras {
 @media (min-width: 768px) {
 
     .nombreproducto {
-        margin: 0px 0px 5px 27px;
+        margin: 0px 0px 5px 50px;
         font-size: 18px;
     }
 }
@@ -120,7 +120,7 @@ h3.titulo.compras {
 @media (min-width: 992px) {
 
     .nombreproducto {
-        margin: 0px 0px 5px 27px;
+        margin: 0px 0px 5px 50px;
         font-size: 18px;
     }
 }
@@ -128,7 +128,7 @@ h3.titulo.compras {
 @media (min-width: 1200px) {
 
     .nombreproducto {
-        margin: 0px 0px 5px 27px;
+        margin: 0px 0px 5px 50px;
         font-size: 18px;
     }
 }
@@ -143,28 +143,28 @@ h3.titulo.compras {
 
 @media (min-width: 576px) {
     .negritatotal {
-        margin: 0px 25px 0px 30px;
+        margin: 0px 25px 0px 0px;
         text-align: center;
     }
 }
 
 @media (min-width: 768px) {
     .negritatotal {
-        margin: 0px 25px 0px 30px;
+        margin: 0px 25px 0px 0px;
         text-align: center;
     }
 }
 
 @media (min-width: 992px) {
     .negritatotal {
-        margin: 0px 25px 0px 30px;
+        margin: 0px 25px 0px 0px;
         text-align: center;
     }
 }
 
 @media (min-width: 1200px) {
     .negritatotal {
-        margin: 0px 25px 0px 30px;
+        margin: 0px 25px 0px 0px;
         text-align: center;
     }
 }
@@ -178,24 +178,24 @@ h3.titulo.compras {
 @media (min-width: 576px){
     .totalcompra {
     font-weight: 700;
-    margin: 22px 0px 22px 3px
+    margin: 22px 0px 22px 85px
 }
 }
 @media (min-width: 768px){
     .totalcompra {
     font-weight: 700;
-    margin: 22px 0px 22px 3px
+    margin: 22px 0px 22px 78px
 }
 }
 @media (min-width: 992px){
     .totalcompra {
     font-weight: 700;
-    margin: 22px 0px 22px 3px
+    margin: 22px 0px 22px 86px
 }
 }
 @media (min-width: 1200px){
     .totalcompra {
     font-weight: 700;
-    margin: 22px 0px 22px 3px
+    margin: 22px 0px 22px 88px
 }
 }
