@@ -31,7 +31,7 @@ h3.titulo.compras {
 .negrita {
     position: absolute;
     left: 302px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .precioproducto {
@@ -47,4 +47,155 @@ h3.titulo.compras {
 .totalcompra {
     font-weight: 700;
     margin: 22px 0px 22px 3px
+}
+
+/* stilos para carrito ventas boton de la basura  */
+
+@media (min-width: 412px) {
+    .negrita {
+        position: absolute;
+        left: 294px;
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .negrita {
+        position: absolute;
+        left: 372px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .negrita {
+        position: absolute;
+        left: 472px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 992px) {
+    .negrita {
+        position: absolute;
+        left: 585px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px) {
+    .negrita {
+        position: absolute;
+        left: 765px;
+        cursor: pointer;
+    }
+}
+
+/* nombre del producto */
+@media (min-width: 412px) {
+
+    .nombreproducto {
+        margin: 0px 0px 5px 58px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .nombreproducto {
+        margin: 0px 0px 5px 27px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .nombreproducto {
+        margin: 0px 0px 5px 27px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .nombreproducto {
+        margin: 0px 0px 5px 27px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .nombreproducto {
+        margin: 0px 0px 5px 27px;
+        font-size: 18px;
+    }
+}
+
+/* total de compras  */
+@media (min-width: 412px) {
+    .negritatotal {
+        margin: 0px 25px 0px 0px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .negritatotal {
+        margin: 0px 25px 0px 30px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .negritatotal {
+        margin: 0px 25px 0px 30px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .negritatotal {
+        margin: 0px 25px 0px 30px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .negritatotal {
+        margin: 0px 25px 0px 30px;
+        text-align: center;
+    }
+}
+/* valor numerico total compra */
+@media (min-width: 412px){
+    .totalcompra {
+    font-weight: 700;
+    margin: 22px 0px 22px 85px
+}
+}
+@media (min-width: 576px){
+    .totalcompra {
+    font-weight: 700;
+    margin: 22px 0px 22px 3px
+}
+}
+@media (min-width: 768px){
+    .totalcompra {
+    font-weight: 700;
+    margin: 22px 0px 22px 3px
+}
+}
+@media (min-width: 992px){
+    .totalcompra {
+    font-weight: 700;
+    margin: 22px 0px 22px 3px
+}
+}
+@media (min-width: 1200px){
+    .totalcompra {
+    font-weight: 700;
+    margin: 22px 0px 22px 3px
+}
 }
